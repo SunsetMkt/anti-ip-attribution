@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution cfw.yaml v0.1.4
+# anti-ip-attribution cfw.yaml v0.1.5
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
@@ -18,7 +18,7 @@ parsers: # array
         # ======= 哔哩哔哩 ======= #
         # 哔哩哔哩
          - DOMAIN-SUFFIX,biliapi.net,IP归属地 # 哔哩哔哩API域名
-         - DOMAIN,api.bilibili.com,IP归属地 # 哔哩哔哩国内网页版API域名
+         - DOMAIN,api.bilibili.com,IP归属地 # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
          - DOMAIN,api.bilibili.tv,IP归属地 # 哔哩哔哩海外版？
          - DOMAIN,app.bilibili.com,IP归属地 # 哔哩哔哩App的API域名
          - DOMAIN-SUFFIX,biliapi.com,IP归属地 # 哔哩哔哩App的API域名
@@ -28,7 +28,6 @@ parsers: # array
          - DOMAIN,live-trace.bilibili.com,IP归属地 # 哔哩哔哩跟踪？API域名
          - DOMAIN,message.bilibili.com,IP归属地 # 哔哩哔哩消息API域名
          - DOMAIN,cm.bilibili.com,IP归属地 # 哔哩哔哩统计API域名
-         - DOMAIN-SUFFIX,biliapi.com,IP归属地 # 哔哩哔哩API域名
         # - DOMAIN-SUFFIX,bilibili.com,IP归属地 # 哔哩哔哩全站域名，不包括内容CDN
         # ======= 微博 ======= #
         # 微博
@@ -42,6 +41,7 @@ parsers: # array
          - DOMAIN,fclog.baidu.com,IP归属地 # 百度日志？
          - DOMAIN,gsp0.baidu.com,IP归属地 # 百度追踪？
          - DOMAIN,hm.baidu.com,IP归属地 # 百度统计
+         - DOMAIN,www.baidu.com,IP归属地 # 网友提供贴吧IP定位接口
         # ======= 微信 ======= #
         # 微信通用
          - DOMAIN,szshort.weixin.qq.com,IP归属地 # 用途未知
@@ -58,6 +58,7 @@ parsers: # array
         # - DOMAIN,www.zhihu.com,IP归属地 # 知乎主站域名，不存在单独有效的API域名
         # - DOMAIN,api.zhihu.com,IP归属地 # 知乎API域名
          - DOMAIN-SUFFIX,zhihu.com,IP归属地 # 知乎全站域名，不包括图片CDN
+         - IP-CIDR,103.41.167.0/24,IP归属地 # 网友提供知乎IP定位接口
         # ======= 国家反诈中心 ======= #
         # 国家反诈中心App
          - DOMAIN-SUFFIX,gjfzpt.cn,REJECT # 国家反诈中心域名，全部阻断
@@ -65,3 +66,13 @@ parsers: # array
         # ======= 抖音 ======= #
         # 抖音
         # 请求域名过多，建议全局代理
+        # 网友提供抖音IP定位接口
+         - DOMAIN-KEYWORD,core-c-lq,IP归属地
+         - DOMAIN-KEYWORD,core-lq,IP归属地
+         - DOMAIN-KEYWORD,normal-c-lq,IP归属地
+         - DOMAIN-KEYWORD,normal-lq,IP归属地
+         - DOMAIN-KEYWORD,search-quic-lq,IP归属地
+         - DOMAIN-KEYWORD,search-lq,IP归属地
+        # ======= 头条 ======= #
+        # 网友提供头条IP定位接口
+         - DOMAIN-SUFFIX,toutiaoapi.com,IP归属地
