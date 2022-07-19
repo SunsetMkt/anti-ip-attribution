@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution cfw.yaml v0.1.1
+# anti-ip-attribution cfw.yaml v0.1.2
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
 parsers: # array
@@ -33,10 +33,17 @@ parsers: # array
          - DOMAIN,fclog.baidu.com,IP归属地 # 百度日志？
          - DOMAIN,gsp0.baidu.com,IP归属地 # 百度追踪？
          - DOMAIN,hm.baidu.com,IP归属地 # 百度统计
+        # 微信通用
+         - DOMAIN,szshort.weixin.qq.com,IP归属地 # 用途未知
+         - DOMAIN,szextshort.weixin.qq.com,IP归属地
+         - DOMAIN,szminorshort.weixin.qq.com,IP归属地
         # 微信公众号评论
          - DOMAIN,mp.weixin.qq.com,IP归属地 # 微信公众号，不存在单独的API域名
+        # 微信视频号评论
+        # - DOMAIN,szshort.weixin.qq.com,IP归属地 # 疑似微信视频号，用途未知
+        # 无法确定准确的请求方式，建议全局代理
         # 知乎
-         - DOMAIN,zhihu-web-analytics.zhihu.com,IP归属地 # 知乎统计API域名
-         - DOMAIN,www.zhihu.com,IP归属地 # 知乎主站域名，不存在单独有效的API域名
-         - DOMAIN,api.zhihu.com,IP归属地 # 知乎API域名
+        # - DOMAIN,zhihu-web-analytics.zhihu.com,IP归属地 # 知乎统计API域名
+        # - DOMAIN,www.zhihu.com,IP归属地 # 知乎主站域名，不存在单独有效的API域名
+        # - DOMAIN,api.zhihu.com,IP归属地 # 知乎API域名
          - DOMAIN-SUFFIX,zhihu.com,IP归属地 # 知乎全站域名，不包括图片CDN
