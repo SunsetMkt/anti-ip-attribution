@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution cfw.yaml v0.1.3
+# anti-ip-attribution cfw.yaml v0.1.4
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
@@ -27,6 +27,9 @@ parsers: # array
          - DOMAIN,passport.bilibili.com,IP归属地 # 哔哩哔哩账号登录API域名
          - DOMAIN,live-trace.bilibili.com,IP归属地 # 哔哩哔哩跟踪？API域名
          - DOMAIN,message.bilibili.com,IP归属地 # 哔哩哔哩消息API域名
+         - DOMAIN,cm.bilibili.com,IP归属地 # 哔哩哔哩统计API域名
+         - DOMAIN-SUFFIX,biliapi.com,IP归属地 # 哔哩哔哩API域名
+        # - DOMAIN-SUFFIX,bilibili.com,IP归属地 # 哔哩哔哩全站域名，不包括内容CDN
         # ======= 微博 ======= #
         # 微博
          - DOMAIN,api.weibo.cn,IP归属地 # 微博API域名
