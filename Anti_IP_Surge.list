@@ -1,6 +1,6 @@
 # 针对部分网站显示IP归属地的Surge分流规则
 # REPO: https://github.com/lwd-temp/anti-ip-attribution
-# UPDATED: 2022.7.27
+# VERSION: 对应cfw.yaml v0.1.8
 
 # ======= 哔哩哔哩 ======= #
 # 哔哩哔哩
@@ -83,7 +83,7 @@ IP-CIDR,103.41.167.0/24
 
 # ======= 国家反诈中心 ======= #
 # 国家反诈中心App
-# DOMAIN-SUFFIX,gjfzpt.cn,REJECT # 国家反诈中心域名，全部阻断
+DOMAIN-SUFFIX,gjfzpt.cn,REJECT # 国家反诈中心域名，全部阻断
 # SRC-IP-CIDR,219.143.187.136/32,REJECT # 用途未知
 
 # ======= 抖音 ======= #
@@ -104,4 +104,10 @@ DOMAIN-SUFFIX,toutiaoapi.com
 # ======= 快手 ======= #
 # issue#3 提供
 # 个人主页似乎有延迟，未测试
+# 一个域名连不上会请求另一个，两个同时使用就会生效了
 DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,ksapisrv.com
+
+# ======= 小红书 ======= #
+# issue#4 提供
+DOMAIN-SUFFIX,xiaohongshu.com
