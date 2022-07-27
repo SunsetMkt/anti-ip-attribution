@@ -21,5 +21,7 @@
 ## 免责声明
 本项目仅用于学习交流，请在遵守所在地法律法规的前提下使用。
 
+请不要在中华人民共和国境内使用此项目。
+
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=lwd-temp/anti-ip-attribution&type=Date)](https://star-history.com/#lwd-temp/anti-ip-attribution&Date)
