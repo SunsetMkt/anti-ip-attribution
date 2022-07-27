@@ -10,6 +10,7 @@
 | -------------------- | ------------------------------------------- |
 | [cfw.yaml](cfw.yaml) | 适用于Clash for Windows的配置文件预处理功能 |
 | [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list)| QuantumultX分流（感谢@ddgksf2013）|
+| [Anti_IP_Surge.list](Anti_IP_Surge.list)| Surge规则集（感谢@Vinetan）|
 | TODO                 | TODO                                        |
 
 ## 请求帮助
