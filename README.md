@@ -12,6 +12,14 @@
 | [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list)| QuantumultX分流（感谢@ddgksf2013）|
 | TODO                 | TODO                                        |
 
+## 请求帮助
+仓库所有者和开发者的能力不能保证持续、高效维护地此仓库。如若发现改进或更好的方案，欢迎PR。
+
+## 使用提示
+不建议使用手机客户端访问这些网站，应用可能会包含难以寻找的API地址或直接利用手机定位获取信息。
 
 ## 免责声明
 本项目仅用于学习交流，请在遵守所在地法律法规的前提下使用。
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=lwd-temp/anti-ip-attribution&type=Date)](https://star-history.com/#lwd-temp/anti-ip-attribution&Date)
