@@ -1,0 +1,107 @@
+# 针对部分网站显示IP归属地的Surge分流规则
+# REPO: https://github.com/lwd-temp/anti-ip-attribution
+# UPDATED: 2022.7.27
+
+# ======= 哔哩哔哩 ======= #
+# 哔哩哔哩
+# 哔哩哔哩API域名
+DOMAIN-SUFFIX,biliapi.net
+# 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
+DOMAIN,api.bilibili.com
+# 哔哩哔哩海外版？
+DOMAIN,api.bilibili.tv
+# 哔哩哔哩App的API域名
+DOMAIN,app.bilibili.com 
+# 哔哩哔哩App的API域名
+DOMAIN-SUFFIX,biliapi.com 
+# 哔哩哔哩直播API域名
+DOMAIN,api.live.bilibili.com 
+# 哔哩哔哩视频API域名，Copilot提供
+DOMAIN,api.vc.bilibili.com 
+# 哔哩哔哩账号登录API域名
+DOMAIN,passport.bilibili.com 
+# 哔哩哔哩跟踪？API域名
+DOMAIN,live-trace.bilibili.com 
+# 哔哩哔哩消息API域名
+DOMAIN,message.bilibili.com 
+# 哔哩哔哩统计API域名
+DOMAIN,cm.bilibili.com 
+# 哔哩哔哩全站域名，不包括内容CDN
+# DOMAIN-SUFFIX,bilibili.com 
+
+# ======= 微博 ======= #
+# 微博
+# issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
+# 微博API域名
+DOMAIN-SUFFIX,api.weibo.cn 
+# 微博API域名，com站以防万一
+DOMAIN-SUFFIX,api.weibo.com 
+
+# ======= 百度贴吧 ======= #
+# 百度贴吧
+# 百度贴吧域名，不存在单独的API域名
+DOMAIN,tieba.baidu.com 
+# 贴吧私信域名？
+DOMAIN,tbmsg.baidu.com 
+# 贴吧不确定用途
+DOMAIN,tb5.bdstatic.com 
+# 百度日志？
+DOMAIN,fclog.baidu.com 
+# 百度追踪？
+DOMAIN,gsp0.baidu.com 
+# 百度统计
+DOMAIN,hm.baidu.com 
+# 网友提供贴吧IP定位接口
+DOMAIN,www.baidu.com 
+
+# ======= 微信 ======= #
+# 微信通用
+# 用途未知
+DOMAIN,szshort.weixin.qq.com 
+DOMAIN,szextshort.weixin.qq.com
+DOMAIN,szminorshort.weixin.qq.com
+# 微信公众号评论
+# 微信公众号，不存在单独的API域名
+DOMAIN,mp.weixin.qq.com 
+# 微信视频号评论
+# 疑似微信视频号，用途未知
+# DOMAIN,szshort.weixin.qq.com
+# 无法确定准确的请求方式，建议全局代理
+
+# ======= 知乎 ======= #
+# 知乎
+# 知乎统计API域名
+# DOMAIN,zhihu-web-analytics.zhihu.com 
+# 知乎主站域名，不存在单独有效的API域名
+# DOMAIN,www.zhihu.com 
+# 知乎API域名
+# DOMAIN,api.zhihu.com 
+# 知乎全站域名，不包括图片CDN
+DOMAIN-SUFFIX,zhihu.com 
+# 网友提供知乎IP定位接口
+IP-CIDR,103.41.167.0/24 
+
+# ======= 国家反诈中心 ======= #
+# 国家反诈中心App
+# DOMAIN-SUFFIX,gjfzpt.cn,REJECT # 国家反诈中心域名，全部阻断
+# SRC-IP-CIDR,219.143.187.136/32,REJECT # 用途未知
+
+# ======= 抖音 ======= #
+# 抖音
+# 请求域名过多，建议全局代理
+# 网友提供抖音IP定位接口
+DOMAIN-KEYWORD,core-c-lq
+DOMAIN-KEYWORD,core-lq
+DOMAIN-KEYWORD,normal-c-lq
+DOMAIN-KEYWORD,normal-lq
+DOMAIN-KEYWORD,search-quic-lq
+DOMAIN-KEYWORD,search-lq
+
+# ======= 头条 ======= #
+# 网友提供头条IP定位接口
+DOMAIN-SUFFIX,toutiaoapi.com
+
+# ======= 快手 ======= #
+# issue#3 提供
+# 个人主页似乎有延迟，未测试
+DOMAIN-SUFFIX,gifshow.com
