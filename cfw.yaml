@@ -77,3 +77,7 @@ parsers: # array
         # ======= 头条 ======= #
         # 网友提供头条IP定位接口
          - DOMAIN-SUFFIX,toutiaoapi.com,IP归属地
+        # ======= 快手 ======= #
+        # issue#3 提供
+        # 个人主页似乎有延迟，未测试
+         - DOMAIN-SUFFIX,gifshow.com,IP归属地
