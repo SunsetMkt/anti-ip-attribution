@@ -24,5 +24,10 @@
 
 请不要在中华人民共和国境内使用此项目。
 
+## Ideas
+关于改进项目但是在没有帮助的情况下很难实现的想法。
+
+* 用YAML储存服务名称和API接口，根据不同的服务自动生成配置文件
+
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=lwd-temp/anti-ip-attribution&type=Date)](https://star-history.com/#lwd-temp/anti-ip-attribution&Date)
