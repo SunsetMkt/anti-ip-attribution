@@ -121,3 +121,7 @@ DOMAIN,keylol.com
 # issue#10 提供
 # 可以阻止真实ip显示，但无法显示代理ip
 DOMAIN-SUFFIX,ixigua.com
+
+# ======= 文叔叔 ======= #
+# DoingDog/anti-ip-attribution
+DOMAIN,www.wenshushu.cn

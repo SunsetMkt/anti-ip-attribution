@@ -92,3 +92,6 @@ parsers: # array
         # ======= 西瓜视频 ======= #
         # issue#10 提供
          - DOMAIN-SUFFIX,ixigua.com,IP归属地 # 可以阻止真实ip显示，但无法显示代理ip
+        # ======= 文叔叔 ======= #
+        # DoingDog/anti-ip-attribution
+         - DOMAIN,www.wenshushu.cn,IP归属地
