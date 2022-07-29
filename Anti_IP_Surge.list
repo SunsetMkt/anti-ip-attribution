@@ -1,6 +1,6 @@
 # 针对部分网站显示IP归属地的Surge分流规则
 # REPO: https://github.com/lwd-temp/anti-ip-attribution
-# VERSION: 对应cfw.yaml v0.1.8
+# VERSION: 对应cfw.yaml v0.1.9
 
 # ======= 哔哩哔哩 ======= #
 # 哔哩哔哩
@@ -111,3 +111,13 @@ DOMAIN-SUFFIX,ksapisrv.com
 # ======= 小红书 ======= #
 # issue#4 提供
 DOMAIN-SUFFIX,xiaohongshu.com
+
+# ======= 其乐论坛 ======= #
+# issue#11 提供
+# 评论区
+DOMAIN,keylol.com
+
+# ======= 西瓜视频 ======= #
+# issue#10 提供
+# 可以阻止真实ip显示，但无法显示代理ip
+DOMAIN-SUFFIX,ixigua.com
