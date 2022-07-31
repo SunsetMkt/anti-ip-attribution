@@ -3,42 +3,44 @@
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
+#
+# 维护者注意：根据issue#13，域名后不要添加注释
 payload: # array
   # ======= 哔哩哔哩 ======= #
   # 哔哩哔哩
-  - DOMAIN-SUFFIX,biliapi.net   # 哔哩哔哩API域名
-  - DOMAIN,api.bilibili.com   # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
-  - DOMAIN,api.bilibili.tv   # 哔哩哔哩海外版？
-  - DOMAIN,app.bilibili.com   # 哔哩哔哩App的API域名
-  - DOMAIN-SUFFIX,biliapi.com   # 哔哩哔哩App的API域名
-  - DOMAIN,api.live.bilibili.com   # 哔哩哔哩直播API域名
-  - DOMAIN,api.vc.bilibili.com   # 哔哩哔哩视频API域名，Copilot提供
-  - DOMAIN,passport.bilibili.com   # 哔哩哔哩账号登录API域名
-  - DOMAIN,live-trace.bilibili.com   # 哔哩哔哩跟踪？API域名
-  - DOMAIN,message.bilibili.com   # 哔哩哔哩消息API域名
-  - DOMAIN,cm.bilibili.com   # 哔哩哔哩统计API域名
-  # - DOMAIN-SUFFIX,bilibili.com   # 哔哩哔哩全站域名，不包括内容CDN
+  - DOMAIN-SUFFIX,biliapi.net
+  - DOMAIN,api.bilibili.com
+  - DOMAIN,api.bilibili.tv
+  - DOMAIN,app.bilibili.com
+  - DOMAIN-SUFFIX,biliapi.com
+  - DOMAIN,api.live.bilibili.com
+  - DOMAIN,api.vc.bilibili.com
+  - DOMAIN,passport.bilibili.com
+  - DOMAIN,live-trace.bilibili.com
+  - DOMAIN,message.bilibili.com
+  - DOMAIN,cm.bilibili.com
+  # - DOMAIN-SUFFIX,bilibili.com
   # ======= 微博 ======= #
   # 微博
   # issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
-  - DOMAIN-SUFFIX,api.weibo.cn   # 微博API域名
-  - DOMAIN-SUFFIX,api.weibo.com   # 微博API域名，com站以防万一
+  - DOMAIN-SUFFIX,api.weibo.cn
+  - DOMAIN-SUFFIX,api.weibo.com
   # ======= 百度贴吧 ======= #
   # 百度贴吧
-  - DOMAIN,tieba.baidu.com   # 百度贴吧域名，不存在单独的API域名
-  - DOMAIN,tbmsg.baidu.com   # 贴吧私信域名？
-  - DOMAIN,tb5.bdstatic.com   # 贴吧不确定用途
-  - DOMAIN,fclog.baidu.com   # 百度日志？
-  - DOMAIN,gsp0.baidu.com   # 百度追踪？
-  - DOMAIN,hm.baidu.com   # 百度统计
-  - DOMAIN,www.baidu.com   # 网友提供贴吧IP定位接口
+  - DOMAIN,tieba.baidu.com
+  - DOMAIN,tbmsg.baidu.com
+  - DOMAIN,tb5.bdstatic.com
+  - DOMAIN,fclog.baidu.com
+  - DOMAIN,gsp0.baidu.com
+  - DOMAIN,hm.baidu.com
+  - DOMAIN,www.baidu.com
   # ======= 微信 ======= #
   # 微信通用
-  - DOMAIN,szshort.weixin.qq.com   # 用途未知
+  - DOMAIN,szshort.weixin.qq.com
   - DOMAIN,szextshort.weixin.qq.com  
   - DOMAIN,szminorshort.weixin.qq.com  
   # 微信公众号评论
-  - DOMAIN,mp.weixin.qq.com   # 微信公众号，不存在单独的API域名
+  - DOMAIN,mp.weixin.qq.com
   # 微信视频号评论
   # - DOMAIN,szshort.weixin.qq.com   # 疑似微信视频号，用途未知
   # 无法确定准确的请求方式，建议全局代理
@@ -47,8 +49,8 @@ payload: # array
   # - DOMAIN,zhihu-web-analytics.zhihu.com   # 知乎统计API域名
   # - DOMAIN,www.zhihu.com   # 知乎主站域名，不存在单独有效的API域名
   # - DOMAIN,api.zhihu.com   # 知乎API域名
-  - DOMAIN-SUFFIX,zhihu.com   # 知乎全站域名，不包括图片CDN
-  - IP-CIDR,103.41.167.0/24   # 网友提供知乎IP定位接口
+  - DOMAIN-SUFFIX,zhihu.com
+  - IP-CIDR,103.41.167.0/24
   # ======= 国家反诈中心 ======= #
   # 国家反诈中心App
   # - DOMAIN-SUFFIX,gjfzpt.cn,REJECT # 国家反诈中心域名，全部阻断 # Rule Provider中不可单独设置规则，需要自行阻断
@@ -77,10 +79,10 @@ payload: # array
   - DOMAIN-SUFFIX,xiaohongshu.com  
   # ======= 其乐论坛 ======= #
   # issue#11 提供
-  - DOMAIN,keylol.com   # 评论区
+  - DOMAIN,keylol.com
   # ======= 西瓜视频 ======= #
   # issue#10 提供
-  - DOMAIN-SUFFIX,ixigua.com   # 可以阻止真实ip显示，但无法显示代理ip
+  - DOMAIN-SUFFIX,ixigua.com
   # ======= 文叔叔 ======= #
   # DoingDog/anti-ip-attribution
   - DOMAIN,www.wenshushu.cn  
