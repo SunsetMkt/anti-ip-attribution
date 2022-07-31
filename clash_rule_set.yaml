@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution clash_rule_set.yaml v0.1.9
+# anti-ip-attribution clash_rule_set.yaml 对应cfw.yaml v0.2.0-dev
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
@@ -86,3 +86,11 @@ payload: # array
   # ======= 文叔叔 ======= #
   # DoingDog/anti-ip-attribution
   - DOMAIN,www.wenshushu.cn  
+  # ======= 豆瓣 ======= #
+  # issue#14提供
+  # iOS客户端
+  - IP-CIDR,49.233.242.15/32
+  - IP-CIDR,81.70.124.99/32
+  - IP-CIDR,140.143.177.206/32
+  # 网页端
+  - DOMAIN,www.douban.com

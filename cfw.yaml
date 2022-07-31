@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution cfw.yaml v0.1.9
+# anti-ip-attribution cfw.yaml v0.2.0-dev
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
@@ -29,11 +29,15 @@ parsers: # array
          - DOMAIN,message.bilibili.com,IP归属地 # 哔哩哔哩消息API域名
          - DOMAIN,cm.bilibili.com,IP归属地 # 哔哩哔哩统计API域名
         # - DOMAIN-SUFFIX,bilibili.com,IP归属地 # 哔哩哔哩全站域名，不包括内容CDN
+        # - DOMAIN-SUFFIX,im9.com,IP归属地
+        # - DOMAIN-SUFFIX,acg.tv,IP归属地
+        # - DOMAIN-SUFFIX,biligame.com,IP归属地
         # ======= 微博 ======= #
         # 微博
         # issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
          - DOMAIN-SUFFIX,api.weibo.cn,IP归属地 # 微博API域名
          - DOMAIN-SUFFIX,api.weibo.com,IP归属地 # 微博API域名，com站以防万一
+        # - DOMAIN-SUFFIX,weibo.com,IP归属地 # 微博全站域名，不包括内容CDN
         # ======= 百度贴吧 ======= #
         # 百度贴吧
          - DOMAIN,tieba.baidu.com,IP归属地 # 百度贴吧域名，不存在单独的API域名
@@ -95,3 +99,11 @@ parsers: # array
         # ======= 文叔叔 ======= #
         # DoingDog/anti-ip-attribution
          - DOMAIN,www.wenshushu.cn,IP归属地
+        # ======= 豆瓣 ======= #
+        # issue#14提供
+        # iOS客户端
+         - IP-CIDR,49.233.242.15/32,IP归属地
+         - IP-CIDR,81.70.124.99/32,IP归属地
+         - IP-CIDR,140.143.177.206/32,IP归属地
+        # 网页端
+         - DOMAIN,www.douban.com,IP归属地

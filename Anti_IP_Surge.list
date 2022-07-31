@@ -1,6 +1,6 @@
 # 针对部分网站显示IP归属地的Surge分流规则
 # REPO: https://github.com/lwd-temp/anti-ip-attribution
-# VERSION: 对应cfw.yaml v0.1.9
+# VERSION: 对应cfw.yaml v0.2.0-dev
 
 # ======= 哔哩哔哩 ======= #
 # 哔哩哔哩
@@ -125,3 +125,12 @@ DOMAIN-SUFFIX,ixigua.com
 # ======= 文叔叔 ======= #
 # DoingDog/anti-ip-attribution
 DOMAIN,www.wenshushu.cn
+
+# ======= 豆瓣 ======= #
+# issue#14提供
+# iOS客户端
+IP-CIDR,49.233.242.15/32
+IP-CIDR,81.70.124.99/32
+IP-CIDR,140.143.177.206/32
+# 网页端
+DOMAIN,www.douban.com
