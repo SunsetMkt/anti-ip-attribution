@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution cfw.yaml v0.2.0-dev
+# anti-ip-attribution cfw.yaml v0.2.0
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
@@ -102,8 +102,10 @@ parsers: # array
         # ======= 豆瓣 ======= #
         # issue#14提供
         # iOS客户端
-         - IP-CIDR,49.233.242.15/32,IP归属地
-         - IP-CIDR,81.70.124.99/32,IP归属地
-         - IP-CIDR,140.143.177.206/32,IP归属地
+        # 目前无法处理iOS端的请求，建议全局代理
+         - DOMAIN,frodo.douban.com,IP归属地
         # 网页端
          - DOMAIN,www.douban.com,IP归属地
+        # ======= 酷安 ======= #
+        # issue#15提供
+         - DOMAIN,api.coolapk.com,IP归属地

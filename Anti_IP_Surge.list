@@ -1,6 +1,6 @@
 # 针对部分网站显示IP归属地的Surge分流规则
 # REPO: https://github.com/lwd-temp/anti-ip-attribution
-# VERSION: 对应cfw.yaml v0.2.0-dev
+# VERSION: 对应cfw.yaml v0.2.0
 
 # ======= 哔哩哔哩 ======= #
 # 哔哩哔哩
@@ -129,8 +129,11 @@ DOMAIN,www.wenshushu.cn
 # ======= 豆瓣 ======= #
 # issue#14提供
 # iOS客户端
-IP-CIDR,49.233.242.15/32
-IP-CIDR,81.70.124.99/32
-IP-CIDR,140.143.177.206/32
+# 目前无法处理iOS端的请求，建议全局代理
+DOMAIN,frodo.douban.com
 # 网页端
 DOMAIN,www.douban.com
+
+# ======= 酷安 ======= #
+# issue#15提供
+DOMAIN,api.coolapk.com
