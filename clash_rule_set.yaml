@@ -96,3 +96,6 @@ payload: # array
   # ======= 酷安 ======= #
   # issue#15提供
   - DOMAIN,api.coolapk.com
+  # ======= TapTap ======= #
+  # issue#16提供
+  - DOMAIN,api.taptapdada.com

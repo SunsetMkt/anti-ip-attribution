@@ -109,3 +109,6 @@ parsers: # array
         # ======= 酷安 ======= #
         # issue#15提供
          - DOMAIN,api.coolapk.com,IP归属地
+        # ======= TapTap ======= #
+        # issue#16提供
+         - DOMAIN,api.taptapdada.com,IP归属地
