@@ -113,3 +113,9 @@ parsers: # array
         # ======= TapTap ======= #
         # issue#16提供
          - DOMAIN,api.taptapdada.com,IP归属地
+        # ======= 网易大神 ======= #
+        # issue#17提供
+         - DOMAIN,god.gameyw.netease.com,IP归属地
+        # ======= 虎牙 ======= #
+        # issue#17提供
+         - DOMAIN-SUFFIX,huya.com,IP归属地
