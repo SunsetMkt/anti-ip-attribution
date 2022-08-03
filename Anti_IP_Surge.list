@@ -1,6 +1,6 @@
 # 针对部分网站显示IP归属地的Surge分流规则
 # REPO: https://github.com/lwd-temp/anti-ip-attribution
-# VERSION: 对应cfw.yaml v0.2.0
+# VERSION: 对应cfw.yaml v0.2.1
 
 # ======= 哔哩哔哩 ======= #
 # 哔哩哔哩
