@@ -129,7 +129,8 @@ DOMAIN,www.wenshushu.cn
 # ======= 豆瓣 ======= #
 # issue#14提供
 # iOS客户端
-# 目前无法处理iOS端的请求，建议全局代理
+# 目前无法可靠地处理iOS端的请求，建议全局代理
+IP-CIDR,119.29.29.98/32,REJECT
 DOMAIN,frodo.douban.com
 # 网页端
 DOMAIN,www.douban.com
