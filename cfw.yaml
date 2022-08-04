@@ -119,3 +119,6 @@ parsers: # array
         # ======= 虎牙 ======= #
         # issue#17提供
          - DOMAIN-SUFFIX,huya.com,IP归属地
+        # ======= 懂球帝 ======= #
+        # issue#18提供
+         - DOMAIN-SUFFIX,dongqiudi.com,IP归属地

@@ -150,3 +150,7 @@ DOMAIN,god.gameyw.netease.com
 # ======= 虎牙 ======= #
 # issue#17提供
 DOMAIN-SUFFIX,huya.com
+
+# ======= 懂球帝 ======= #
+# issue#18提供
+DOMAIN-SUFFIX,dongqiudi.com
