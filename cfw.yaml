@@ -126,3 +126,7 @@ parsers: # array
         # ======= 懂球帝 ======= #
         # issue#18提供
          - DOMAIN-SUFFIX,dongqiudi.com,IP归属地
+        # ======= NGA ======= #
+        # issue#19提供
+        # 个人主页ip。开代理以后发一个评论就会变代理ip
+         - DOMAIN,ngabbs.com,IP归属地
