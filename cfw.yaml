@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的Clash分流规则
-# anti-ip-attribution cfw.yaml v0.2.1
+# anti-ip-attribution cfw.yaml v0.2.2
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 # 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
