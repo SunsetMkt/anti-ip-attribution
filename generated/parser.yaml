@@ -1,0 +1,68 @@
+# 针对部分网站显示IP归属地的分流规则
+# anti-ip-attribution parser.yamlv0.2.2
+# https://github.com/lwd-temp/anti-ip-attribution
+# 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
+parsers:
+- url: https://example.com/profile.yaml
+  yaml:
+    prepend-proxy-groups:
+    - name: "IP\u5F52\u5C5E\u5730"
+      proxies:
+      - "\U0001F530 \u9009\u62E9\u8282\u70B9"
+      - DIRECT
+      type: select
+    prepend-rules:
+    - "DOMAIN-SUFFIX,biliapi.net,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.bilibili.tv,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,app.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,biliapi.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.live.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.vc.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,passport.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,live-trace.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,message.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,cm.bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,bilibili.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,im9.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,acg.tv,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,biligame.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,weibo.cn,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,weibo.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,weibocdn.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,weibo,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,tieba.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,tbmsg.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,tb5.bdstatic.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,fclog.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,gsp0.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,hm.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,www.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,szshort.weixin.qq.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,szextshort.weixin.qq.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,szminorshort.weixin.qq.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,mp.weixin.qq.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,zhihu.com,IP\u5F52\u5C5E\u5730"
+    - "IP-CIDR,103.41.167.0/24,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,core-c-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,core-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,normal-c-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,normal-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,search-quic-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,search-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,toutiaoapi.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,gifshow.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,ksapisrv.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,xiaohongshu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,keylol.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,ixigua.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,www.wenshushu.cn,IP\u5F52\u5C5E\u5730"
+    - IP-CIDR,119.29.29.98/32,REJECT
+    - "DOMAIN,frodo.douban.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,www.douban.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.coolapk.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.taptapdada.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,god.gameyw.netease.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,huya.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,dongqiudi.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,ngabbs.com,IP\u5F52\u5C5E\u5730"
