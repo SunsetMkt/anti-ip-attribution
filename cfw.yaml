@@ -38,10 +38,10 @@ parsers: # array
         # - DOMAIN-SUFFIX,api.weibo.cn,IP归属地 # 微博API域名
         # - DOMAIN-SUFFIX,api.weibo.com,IP归属地 # 微博API域名，com站以防万一
         # - DOMAIN-SUFFIX,weibo.com,IP归属地 # 微博全站域名，不包括内容CDN
-         - HOST-SUFFIX,weibo.cn,IP归属地
-         - HOST-SUFFIX,weibo.com,IP归属地
-         - HOST-SUFFIX,weibocdn.com,IP归属地
-         - HOST-KEYWORD,weibo,IP归属地
+         - DOMAIN-SUFFIX,weibo.cn,IP归属地
+         - DOMAIN-SUFFIX,weibo.com,IP归属地
+         - DOMAIN-SUFFIX,weibocdn.com,IP归属地
+         - DOMAIN-KEYWORD,weibo,IP归属地
         # ======= 百度贴吧 ======= #
         # 百度贴吧
          - DOMAIN,tieba.baidu.com,IP归属地 # 百度贴吧域名，不存在单独的API域名

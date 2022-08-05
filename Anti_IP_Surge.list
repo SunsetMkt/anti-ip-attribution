@@ -36,10 +36,10 @@ DOMAIN,cm.bilibili.com
 # DOMAIN-SUFFIX,api.weibo.cn 
 # 微博API域名，com站以防万一
 # DOMAIN-SUFFIX,api.weibo.com 
-HOST-SUFFIX,weibo.cn
-HOST-SUFFIX,weibo.com
-HOST-SUFFIX,weibocdn.com
-HOST-KEYWORD,weibo
+DOMAIN-SUFFIX,weibo.cn
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibocdn.com
+DOMAIN-KEYWORD,weibo
 
 # ======= 百度贴吧 ======= #
 # 百度贴吧
