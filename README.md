@@ -18,18 +18,22 @@
 |         [surge.list](generated/surge.list)         |                        Surge分流规则                         |
 |   [quantumultx.list](generated/quantumultx.list)   |                     QuantumultX分流规则                      |
 
+## 其他版本
+|                        文件                        |                             用途                             |
+| :------------------------------------------------: | :----------------------------------------------------------: |
+| [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list)| QuantumultX分流（感谢@ddgksf2013）|
+
 ## 关于自动生成
 本仓库使用GitHub Actions从`rules.yaml`中生成配置文件，详见`generate.py`。
 
 ## 配置文件（已弃用，不再更新）
-**这些文件和链接将在v0.3.0版本后移除，除非在此之前有更新行为。**
+**这些文件和链接将在v0.3.0版本后移除。**
 
 建议在使用前详细阅读`cfw.yaml`内容，并验证其他配置文件是否与其保持更新。
 
-| 文件名               | 用途                                        |
+| 文件                | 用途                                        |
 | -------------------- | ------------------------------------------- |
 | [cfw.yaml](cfw.yaml) | 适用于Clash for Windows的配置文件预处理功能 |
-| [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list)| QuantumultX分流（感谢@ddgksf2013）|
 | [Anti_IP_Surge.list](Anti_IP_Surge.list)| Surge规则集（感谢@Vinetan）|
 | TODO                 | TODO                                        |
 
