@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.listv0.2.3
+# anti-ip-attribution surge.listv0.2.4
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN-SUFFIX,biliapi.net
@@ -56,3 +56,4 @@ DOMAIN,god.gameyw.netease.com
 DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,dongqiudi.com
 DOMAIN,ngabbs.com
+DOMAIN,api.vip.miui.com

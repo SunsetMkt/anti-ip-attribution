@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yamlv0.2.3
+# anti-ip-attribution parser.yamlv0.2.4
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -66,3 +66,4 @@ parsers:
     - "DOMAIN-SUFFIX,huya.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,dongqiudi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,ngabbs.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api.vip.miui.com,IP\u5F52\u5C5E\u5730"
