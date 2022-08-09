@@ -44,7 +44,7 @@ def get_head_comment(config, filename='', description=''):
     comment = ''
     comment += '# ' + config['config']['description'] + '\n'
     comment += '# ' + config['config']['name'] + ' ' + \
-        filename + config['config']['version'] + '\n'
+        filename + ' ' + config['config']['version'] + '\n'
     comment += '# ' + config['config']['url'] + '\n'
     comment += '# ' + description + '\n'
     return comment
