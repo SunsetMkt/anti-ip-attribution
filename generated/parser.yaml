@@ -27,6 +27,7 @@ parsers:
     - "DOMAIN-SUFFIX,im9.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,acg.tv,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,biligame.com,IP\u5F52\u5C5E\u5730"
+    - SRC-IP-CIDR,203.107.1.0/24,REJECT
     - "DOMAIN-SUFFIX,weibo.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibo.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibocdn.com,IP\u5F52\u5C5E\u5730"
