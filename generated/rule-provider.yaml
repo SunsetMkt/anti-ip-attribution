@@ -18,7 +18,7 @@ payload:
 - DOMAIN-SUFFIX,im9.com
 - DOMAIN-SUFFIX,acg.tv
 - DOMAIN-SUFFIX,biligame.com
-- SRC-IP-CIDR,203.107.1.0/24,REJECT
+- IP-CIDR,203.107.1.0/24,REJECT
 - DOMAIN-SUFFIX,weibo.cn
 - DOMAIN-SUFFIX,weibo.com
 - DOMAIN-SUFFIX,weibocdn.com
