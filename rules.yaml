@@ -31,7 +31,7 @@ config:
     - DOMAIN-SUFFIX,im9.com
     - DOMAIN-SUFFIX,acg.tv
     - DOMAIN-SUFFIX,biligame.com
-    - SRC-IP-CIDR,203.107.1.0/24,REJECT
+    - IP-CIDR,203.107.1.0/24,REJECT
     # ======= 微博 ======= #
     # 微博
     # issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
@@ -71,7 +71,7 @@ config:
     # ======= 国家反诈中心 ======= #
     # 国家反诈中心App
     # - DOMAIN-SUFFIX,gjfzpt.cn,REJECT # 国家反诈中心域名，全部阻断
-    # - SRC-IP-CIDR,219.143.187.136/32,REJECT # 用途未知
+    # - IP-CIDR,219.143.187.136/32,REJECT # 用途未知
     # ======= 抖音 ======= #
     # 抖音
     # 请求域名过多，建议全局代理
