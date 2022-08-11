@@ -133,3 +133,8 @@ config:
     # ======= 小米社区 ======= #
     # 如有必要可以DOMAIN-SUFFIX,vip.miui.com
     - DOMAIN,api.vip.miui.com
+    # ======= 网易云音乐 ======= #
+    - DOMAIN,music.163.com
+    # - DOMAIN-SUFFIX,music.163.com
+    # - DOMAIN,nstool.netease.com
+    # - DOMAIN-SUFFIX,laiqukankan.com
