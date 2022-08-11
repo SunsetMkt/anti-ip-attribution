@@ -68,3 +68,4 @@ parsers:
     - "DOMAIN-SUFFIX,dongqiudi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,ngabbs.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,api.vip.miui.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,music.163.com,IP\u5F52\u5C5E\u5730"
