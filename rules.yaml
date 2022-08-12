@@ -10,7 +10,7 @@
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
   name: "anti-ip-attribution" # 项目名
-  version: "v0.2.4" # 版本号
+  version: "v0.2.5" # 版本号
   url: "https://github.com/lwd-temp/anti-ip-attribution" # 项目地址
   description: "针对部分网站显示IP归属地的分流规则" # 项目描述
   rules: # 规则列表
@@ -134,7 +134,17 @@ config:
     # 如有必要可以DOMAIN-SUFFIX,vip.miui.com
     - DOMAIN,api.vip.miui.com
     # ======= 网易云音乐 ======= #
-    - DOMAIN,music.163.com
-    # - DOMAIN-SUFFIX,music.163.com
-    # - DOMAIN,nstool.netease.com
+    # https://github.com/lwd-temp/anti-ip-attribution/issues/21#issuecomment-1213136722
+    # - DOMAIN,music.163.com
+    - DOMAIN-SUFFIX,music.163.com
+    - DOMAIN,nstool.netease.com
+    - DOMAIN,wanproxy.127.net
+    - DOMAIN,mam.netease.com
+    - DOMAIN,dt.netease.im
+    - DOMAIN,api.iplay.163.com
+    - DOMAIN,api.k.163.com
+    - DOMAIN,lbs.netease.im
+    - DOMAIN,wannos.127.net
+    - DOMAIN,ac.dun.163.com
+    - DOMAIN-SUFFIX,music.126.net
     # - DOMAIN-SUFFIX,laiqukankan.com
