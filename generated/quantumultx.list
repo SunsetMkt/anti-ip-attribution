@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.2.4
+# anti-ip-attribution quantumultx.list v0.2.5
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN-SUFFIX,biliapi.net,IP
@@ -58,4 +58,14 @@ DOMAIN-SUFFIX,huya.com,IP
 DOMAIN-SUFFIX,dongqiudi.com,IP
 DOMAIN,ngabbs.com,IP
 DOMAIN,api.vip.miui.com,IP
-DOMAIN,music.163.com,IP
+DOMAIN-SUFFIX,music.163.com,IP
+DOMAIN,nstool.netease.com,IP
+DOMAIN,wanproxy.127.net,IP
+DOMAIN,mam.netease.com,IP
+DOMAIN,dt.netease.im,IP
+DOMAIN,api.iplay.163.com,IP
+DOMAIN,api.k.163.com,IP
+DOMAIN,lbs.netease.im,IP
+DOMAIN,wannos.127.net,IP
+DOMAIN,ac.dun.163.com,IP
+DOMAIN-SUFFIX,music.126.net,IP

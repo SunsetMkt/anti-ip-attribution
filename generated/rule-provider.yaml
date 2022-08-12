@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider.yaml v0.2.4
+# anti-ip-attribution rule-provider.yaml v0.2.5
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -59,4 +59,14 @@ payload:
 - DOMAIN-SUFFIX,dongqiudi.com
 - DOMAIN,ngabbs.com
 - DOMAIN,api.vip.miui.com
-- DOMAIN,music.163.com
+- DOMAIN-SUFFIX,music.163.com
+- DOMAIN,nstool.netease.com
+- DOMAIN,wanproxy.127.net
+- DOMAIN,mam.netease.com
+- DOMAIN,dt.netease.im
+- DOMAIN,api.iplay.163.com
+- DOMAIN,api.k.163.com
+- DOMAIN,lbs.netease.im
+- DOMAIN,wannos.127.net
+- DOMAIN,ac.dun.163.com
+- DOMAIN-SUFFIX,music.126.net
