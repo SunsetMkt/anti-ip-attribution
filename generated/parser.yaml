@@ -79,3 +79,4 @@ parsers:
     - "DOMAIN,wannos.127.net,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,ac.dun.163.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,music.126.net,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,laiqukankan.com,IP\u5F52\u5C5E\u5730"
