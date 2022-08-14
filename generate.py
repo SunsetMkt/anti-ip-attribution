@@ -14,6 +14,7 @@
 import os
 import sys
 
+import git
 import yaml
 
 
@@ -40,12 +41,20 @@ def save_string(string, filename):
         f.write(string)
 
 
+def get_git_hash():
+    '''获取Git提交'''
+    repo = git.Repo(search_parent_directories=True)
+    sha = repo.head.object.hexsha
+    return str(sha)
+
+
 def get_head_comment(config, filename='', description=''):
     '''获取头部注释'''
     comment = ''
     comment += '# ' + config['config']['description'] + '\n'
     comment += '# ' + config['config']['name'] + ' ' + \
-        filename + ' ' + config['config']['version'] + '\n'
+        filename + ' ' + config['config']['version'] + \
+        ' ' + get_git_hash() + '\n'
     comment += '# ' + config['config']['url'] + '\n'
     comment += '# ' + description + '\n'
     return comment
