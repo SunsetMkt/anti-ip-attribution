@@ -183,8 +183,10 @@ def generate_quantumultx(config):
 
 
 if __name__ == '__main__':
-    print('开始生成配置文件...')
     config = read_yaml('rules.yaml')
+    print(get_head_comment(config, 'generate.py', '配置文件生成脚本'))
+    print('=====================')
+    print('开始生成配置文件...')
     print('=====================')
     print(config)
     print('=====================')
