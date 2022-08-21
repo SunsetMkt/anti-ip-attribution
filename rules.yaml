@@ -158,6 +158,16 @@ config:
     - DOMAIN-SUFFIX,music.126.net
     - DOMAIN-SUFFIX,laiqukankan.com
     - DOMAIN-SUFFIX,music.ntes53.netease.com
+    # telv4.music.ntes53.netease.com
+    # telv6.music.ntes53.netease.com
+    # cmccv4.music.ntes53.netease.com
+    # cmccv6.music.ntes53.netease.com
+    # univ4.music.ntes53.netease.com
+    # univ6.music.ntes53.netease.com
+    # overseasv4.music.ntes53.netease.com
+    # overseasv6.music.ntes53.netease.com
+    # bgpv4.music.ntes53.netease.com
+    # bgpv6.music.ntes53.netease.com
     - IP-CIDR,101.71.154.241/32
     - IP-CIDR,103.126.92.132/32
     - IP-CIDR,103.126.92.133/32
