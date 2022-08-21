@@ -70,7 +70,7 @@ def check_rules(config):
     rules = config['config']['rules']
     # 预期中可用的规则方法
     expected_methods = ['DOMAIN', 'DOMAIN-SUFFIX',
-                        'DOMAIN-KEYWORD', 'IP-CIDR', 'GEOIP', 'DST-PORT']
+                        'DOMAIN-KEYWORD', 'IP-CIDR', 'GEOIP', 'DST-PORT', 'IP-CIDR6']
     # 容易出错的规则方法
     questioned_methods = ['SRC-IP-CIDR', 'SRC-PORT', 'RULE-SET', 'MATCH']
     # 预期中可用的规则部分
