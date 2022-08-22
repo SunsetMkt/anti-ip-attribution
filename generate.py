@@ -72,7 +72,8 @@ def check_rules(config):
     expected_methods = ['DOMAIN', 'DOMAIN-SUFFIX',
                         'DOMAIN-KEYWORD', 'IP-CIDR', 'GEOIP', 'DST-PORT', 'IP-CIDR6']
     # 容易出错的规则方法
-    questioned_methods = ['SRC-IP-CIDR', 'SRC-PORT', 'RULE-SET', 'MATCH']
+    questioned_methods = ['SRC-IP-CIDR',
+                          'SRC-PORT', 'RULE-SET', 'MATCH', 'IP6-CIDR']
     # 预期中可用的规则部分
     expected_rules = ['DIRECT', 'REJECT', 'no-resolve']
     # rules中不需要出现IP类关键词，生成脚本会按需自动添加
@@ -174,8 +175,11 @@ def generate_quantumultx(config):
     rules = ''
     for rule in config['config']['rules']:
         rule = rule.strip()
-        if "IP-CIDR6" in rule:
-            rule = rule.replace('IP-CIDR6','IP6-CIDR')
+        # Quantumult X 中, IP-CIDR6 的相关规则名称为 IP6-CIDR, 无法识别前缀为 IP-CIDR6 的规则.
+        # https://github.com/KooriMoe
+        if "IP-CIDR6" in seprate_comma(rule)[0]:  # 仅处理出现在第一个位置的规则
+            rule = rule.replace('IP-CIDR6', 'IP6-CIDR',
+                                1)  # 替换第一个 IP-CIDR6 字符串
         if len(seprate_comma(rule)) == 2:
             rules += rule + ',IP\n'
         else:
