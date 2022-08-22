@@ -174,6 +174,8 @@ def generate_quantumultx(config):
     rules = ''
     for rule in config['config']['rules']:
         rule = rule.strip()
+        if "IP-CIDR6" in rule:
+            rule = rule.replace('IP-CIDR6','IP6-CIDR')
         if len(seprate_comma(rule)) == 2:
             rules += rule + ',IP\n'
         else:
