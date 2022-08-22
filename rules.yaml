@@ -10,7 +10,7 @@
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
   name: "anti-ip-attribution" # 项目名
-  version: "v0.2.8" # 版本号
+  version: "v0.2.9" # 版本号
   url: "https://github.com/lwd-temp/anti-ip-attribution" # 项目地址
   description: "针对部分网站显示IP归属地的分流规则" # 项目描述
   rules: # 规则列表
