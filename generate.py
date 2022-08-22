@@ -180,6 +180,7 @@ def generate_quantumultx(config):
         if "IP-CIDR6" in seprate_comma(rule)[0]:  # 仅处理出现在第一个位置的规则
             rule = rule.replace('IP-CIDR6', 'IP6-CIDR',
                                 1)  # 替换第一个 IP-CIDR6 字符串
+            print('针对Quantumult X替换IP-CIDR6为IP6-CIDR：' + rule)
         if len(seprate_comma(rule)) == 2:
             rules += rule + ',IP\n'
         else:
