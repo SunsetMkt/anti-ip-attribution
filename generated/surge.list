@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.2.8 f526e24963d67416b55d50da10d547cf3f054be8
+# anti-ip-attribution surge.list v0.2.8 3a1ae4e67e3a293998177e86e23179546288bc12
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN-SUFFIX,biliapi.net
@@ -35,6 +35,8 @@ DOMAIN,szminorshort.weixin.qq.com
 DOMAIN,mp.weixin.qq.com
 DOMAIN-SUFFIX,zhihu.com
 IP-CIDR,103.41.167.0/24
+IP-CIDR,118.89.204.198/23,REJECT
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT
 DOMAIN-KEYWORD,core-c-lq
 DOMAIN-KEYWORD,core-lq
 DOMAIN-KEYWORD,normal-c-lq

@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.2.8 f526e24963d67416b55d50da10d547cf3f054be8
+# anti-ip-attribution quantumultx.list v0.2.8 3a1ae4e67e3a293998177e86e23179546288bc12
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN-SUFFIX,biliapi.net,IP
@@ -35,6 +35,8 @@ DOMAIN,szminorshort.weixin.qq.com,IP
 DOMAIN,mp.weixin.qq.com,IP
 DOMAIN-SUFFIX,zhihu.com,IP
 IP-CIDR,103.41.167.0/24,IP
+IP-CIDR,118.89.204.198/23,REJECT
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT
 DOMAIN-KEYWORD,core-c-lq,IP
 DOMAIN-KEYWORD,core-lq,IP
 DOMAIN-KEYWORD,normal-c-lq,IP
