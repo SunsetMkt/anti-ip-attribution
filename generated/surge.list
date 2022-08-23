@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.2.9 61712ccc1a50757279111f04498aa043a1cd6c8d
+# anti-ip-attribution surge.list v0.3.0 f530e07c31a788020f110f512ee5b21dab4a15c9
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN-SUFFIX,biliapi.net
@@ -84,5 +84,15 @@ IP-CIDR,45.254.48.1/32
 IP-CIDR,59.111.160.195/32
 IP-CIDR,59.111.19.33/32
 IP-CIDR,59.111.19.53/32
+DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,hls3a-akm.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,vplay1a.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,vplay3a.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,ws-tct.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
 DOMAIN-SUFFIX,douyucdn.cn
 DOMAIN-SUFFIX,douyu.com
