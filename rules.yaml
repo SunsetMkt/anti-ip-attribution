@@ -10,7 +10,7 @@
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
   name: "anti-ip-attribution" # 项目名
-  version: "v0.2.9" # 版本号
+  version: "v0.3.0" # 版本号
   url: "https://github.com/lwd-temp/anti-ip-attribution" # 项目地址
   description: "针对部分网站显示IP归属地的分流规则" # 项目描述
   rules: # 规则列表
@@ -181,6 +181,17 @@ config:
     - IP-CIDR,59.111.19.53/32
     # ======= 斗鱼 ======= #
     # https://github.com/lwd-temp/anti-ip-attribution/issues/23
+    # direct斗鱼直播流 https://github.com/wbt5/real-url/issues/340
+    - DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,hls3a-akm.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,vplay1a.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,vplay3a.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,ws-tct.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
+    - DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
     # - DOMAIN,wss.im.qcloud.com
     - DOMAIN-SUFFIX,douyucdn.cn
     - DOMAIN-SUFFIX,douyu.com
