@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.0 cd1c261103beb698a42a1233048f22a9caeb02ca
+# anti-ip-attribution quantumultx.list v0.3.0 15cf07be4f2206d76c6eeb50c1a14a564b2a614d
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN-SUFFIX,biliapi.net,IP
