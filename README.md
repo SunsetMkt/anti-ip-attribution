@@ -15,6 +15,9 @@
 | :------------------------------------------------: | :----------------------------------------------------------: |
 |        [parser.yaml](generated/parser.yaml)        | 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html |
 | [rule-provider.yaml](generated/rule-provider.yaml) | 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
+| [rule-provider-direct.yaml](generated/rule-provider-direct.yaml) | 仅包含DIRECT规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
+| [rule-provider-proxy.yaml](generated/rule-provider-proxy.yaml) | 仅包含需要代理的规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
+| [rule-provider-reject.yaml](generated/rule-provider-reject.yaml) | 仅包含REJECT规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
 |         [surge.list](generated/surge.list)         |                        Surge分流规则                         |
 |   [quantumultx.list](generated/quantumultx.list)   |                     QuantumultX分流规则                      |
 
