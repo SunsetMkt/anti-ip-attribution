@@ -175,16 +175,22 @@ def generate_rule_provider(config):
     output = comment + get_yaml_string(output)
     save_string(output, os.path.join('generated', 'rule-provider.yaml'))
     # Direct rules
+    comment = get_head_comment(config, 'rule-provider-direct.yaml',
+                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
     output = {}
     output['payload'] = direct
     output = comment + get_yaml_string(output)
     save_string(output, os.path.join('generated', 'rule-provider-direct.yaml'))
     # Proxy rules
+    comment = get_head_comment(config, 'rule-provider-proxy.yaml',
+                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
     output = {}
     output['payload'] = proxy
     output = comment + get_yaml_string(output)
     save_string(output, os.path.join('generated', 'rule-provider-proxy.yaml'))
     # Reject rules
+    comment = get_head_comment(config, 'rule-provider-reject.yaml',
+                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
     output = {}
     output['payload'] = reject
     output = comment + get_yaml_string(output)
