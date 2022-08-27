@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.0 f530e07c31a788020f110f512ee5b21dab4a15c9
+# anti-ip-attribution parser.yaml v0.3.0 42bd8bf5ee5a95225d7c3c891c5c26722c19d6ec
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
