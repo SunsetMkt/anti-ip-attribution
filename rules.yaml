@@ -192,6 +192,10 @@ config:
     - DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
     - DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
     - DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
-    # - DOMAIN,wss.im.qcloud.com
+    #direct弹幕
+    - DOMAIN-SUFFIX,wsproxy.douyu.com,DIRECT
+    - DOMAIN-SUFFIX,danmuproxy.douyu.com,DIRECT
+    #direct图片
+    - DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
     - DOMAIN-SUFFIX,douyucdn.cn
     - DOMAIN-SUFFIX,douyu.com
