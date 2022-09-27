@@ -12,6 +12,7 @@
 # rule-provider-direct.yaml rule-provider-proxy.yaml rule-provider-reject.yaml
 # surge.list Surge分流规则
 # quantumultx.list QuantumultX分流规则
+# quantumultx-domesticsocial.list QuantumultX分流规则，策略组名称为DomesticSocial
 import os
 import sys
 
@@ -216,7 +217,10 @@ def generate_quantumultx(config):
     '''生成quantumultx.list'''
     comment = get_head_comment(
         config, 'quantumultx.list', 'QuantumultX分流规则')
+    commentDomesticSocial = get_head_comment(
+        config, 'quantumultx-domesticsocial.list', 'QuantumultX分流规则，策略组名称为DomesticSocial')
     rules = ''
+    rulesDomesticSocial = ''
     for rule in config['config']['rules']:
         rule = rule.strip()
         # Quantumult X 中, IP-CIDR6 的相关规则名称为 IP6-CIDR, 无法识别前缀为 IP-CIDR6 的规则.
@@ -226,11 +230,16 @@ def generate_quantumultx(config):
                                 1)  # 替换第一个 IP-CIDR6 字符串
             print('针对Quantumult X替换IP-CIDR6为IP6-CIDR：' + rule)
         if len(seprate_comma(rule)) == 2:
-            rules += rule + ',DomesticSocial\n'
+            rules += rule + ',IP\n'
+            rulesDomesticSocial += rule + ',DomesticSocial\n'
         else:
             rules += rule + '\n'
+            rulesDomesticSocial += rule + '\n'
     output = comment + rules
+    outputDomesticSocial = commentDomesticSocial + rulesDomesticSocial
     save_string(output, os.path.join('generated', 'quantumultx.list'))
+    save_string(output, os.path.join(
+        'generated', 'quantumultx-domesticsocial.list'))
 
 
 if __name__ == '__main__':
