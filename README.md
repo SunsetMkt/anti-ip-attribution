@@ -11,20 +11,21 @@
 建议Fork自己的一份配置文件，不要直接使用最新的。
 
 ## 自动生成的配置文件
-|                        文件                        |                             用途                             |
-| :------------------------------------------------: | :----------------------------------------------------------: |
-|        [parser.yaml](generated/parser.yaml)        | 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html |
-| [rule-provider.yaml](generated/rule-provider.yaml) | 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
-| [rule-provider-direct.yaml](generated/rule-provider-direct.yaml) | 仅包含DIRECT规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
-| [rule-provider-proxy.yaml](generated/rule-provider-proxy.yaml) | 仅包含需要代理的规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
-| [rule-provider-reject.yaml](generated/rule-provider-reject.yaml) | 仅包含REJECT规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
-|         [surge.list](generated/surge.list)         |                        Surge分流规则                         |
-|   [quantumultx.list](generated/quantumultx.list)   |                     QuantumultX分流规则                      |
+|                                     文件                                     |                                                            用途                                                             |
+| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
+|                     [parser.yaml](generated/parser.yaml)                     |              适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html              |
+|              [rule-provider.yaml](generated/rule-provider.yaml)              |            适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider            |
+|       [rule-provider-direct.yaml](generated/rule-provider-direct.yaml)       |   仅包含DIRECT规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider   |
+|        [rule-provider-proxy.yaml](generated/rule-provider-proxy.yaml)        | 仅包含需要代理的规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
+|       [rule-provider-reject.yaml](generated/rule-provider-reject.yaml)       |   仅包含REJECT规则，适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider   |
+|                      [surge.list](generated/surge.list)                      |                                                        Surge分流规则                                                        |
+|                [quantumultx.list](generated/quantumultx.list)                |                                                     QuantumultX分流规则                                                     |
+| [quantumultx-domesticsocial.list](generated/quantumultx-domesticsocial.list) |                                       QuantumultX分流规则，策略组名称为DomesticSocial                                       |
 
 ## 其他版本
-|                        文件                        |                             用途                             |
-| :------------------------------------------------: | :----------------------------------------------------------: |
-| [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list)| QuantumultX分流（感谢@ddgksf2013）|
+|                                                            文件                                                            |                用途                |
+| :------------------------------------------------------------------------------------------------------------------------: | :--------------------------------: |
+| [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list) | QuantumultX分流（感谢@ddgksf2013） |
 
 ## 关于自动生成
 本仓库使用GitHub Actions从`rules.yaml`中生成配置文件，详见`generate.py`。
