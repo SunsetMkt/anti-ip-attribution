@@ -238,7 +238,7 @@ def generate_quantumultx(config):
     output = comment + rules
     outputDomesticSocial = commentDomesticSocial + rulesDomesticSocial
     save_string(output, os.path.join('generated', 'quantumultx.list'))
-    save_string(output, os.path.join(
+    save_string(outputDomesticSocial, os.path.join(
         'generated', 'quantumultx-domesticsocial.list'))
 
 
