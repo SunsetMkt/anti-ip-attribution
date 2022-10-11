@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.0 be1aba008dbe298e37e3acdbe64482d99163d3d9
+# anti-ip-attribution parser.yaml v0.3.0 b46de4b0d2bad8b5162d8f2ac9d5e56212247cd5
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -109,3 +109,4 @@ parsers:
     - DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
     - "DOMAIN-SUFFIX,douyucdn.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,douyu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,bbs-api.mihoyo.com,IP\u5F52\u5C5E\u5730"

@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.0 be1aba008dbe298e37e3acdbe64482d99163d3d9
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.0 b46de4b0d2bad8b5162d8f2ac9d5e56212247cd5
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -83,3 +83,4 @@ payload:
 - IP-CIDR,59.111.19.53/32
 - DOMAIN-SUFFIX,douyucdn.cn
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN,bbs-api.mihoyo.com
