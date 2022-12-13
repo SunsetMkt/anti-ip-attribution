@@ -22,11 +22,6 @@
 |                [quantumultx.list](generated/quantumultx.list)                |                                                     QuantumultX分流规则                                                     |
 | [quantumultx-domesticsocial.list](generated/quantumultx-domesticsocial.list) |                                       QuantumultX分流规则，策略组名称为DomesticSocial                                       |
 
-## 其他版本
-|                                                            文件                                                            |                用途                |
-| :------------------------------------------------------------------------------------------------------------------------: | :--------------------------------: |
-| [anti-ip-attribution.list](https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/anti-ip-attribution.list) | QuantumultX分流（感谢@ddgksf2013） |
-
 ## 关于自动生成
 本仓库使用GitHub Actions从`rules.yaml`中生成配置文件，详见`generate.py`。
 
