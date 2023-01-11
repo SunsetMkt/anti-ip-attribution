@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.0 d6b83280a36fb1cfa7290ddc8fb95abec4b9826a
+# anti-ip-attribution parser.yaml v0.3.0 c0c939d843742014b138208ff32513e6d734c2ff
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -39,6 +39,7 @@ parsers:
     - "DOMAIN,gsp0.baidu.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,hm.baidu.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,www.baidu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,tiebac.baidu.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,szshort.weixin.qq.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,szextshort.weixin.qq.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,szminorshort.weixin.qq.com,IP\u5F52\u5C5E\u5730"
@@ -53,6 +54,21 @@ parsers:
     - "DOMAIN-KEYWORD,normal-lq,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,search-quic-lq,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,search-lq,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-normal-,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-core-,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-misc-,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-search-,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-aweme-,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,amemv.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,zijieapi.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,awemeughun.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,ecombdapi.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,bytegecko.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,ttwebview.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,bytetcc.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,sso.douyin.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,www.douyin.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,snssdk.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,toutiaoapi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,gifshow.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,ksapisrv.com,IP\u5F52\u5C5E\u5730"

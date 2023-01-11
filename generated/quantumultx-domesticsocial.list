@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 d6b83280a36fb1cfa7290ddc8fb95abec4b9826a
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 c0c939d843742014b138208ff32513e6d734c2ff
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN-SUFFIX,biliapi.net,DomesticSocial
@@ -29,6 +29,7 @@ DOMAIN,fclog.baidu.com,DomesticSocial
 DOMAIN,gsp0.baidu.com,DomesticSocial
 DOMAIN,hm.baidu.com,DomesticSocial
 DOMAIN,www.baidu.com,DomesticSocial
+DOMAIN,tiebac.baidu.com,DomesticSocial
 DOMAIN,szshort.weixin.qq.com,DomesticSocial
 DOMAIN,szextshort.weixin.qq.com,DomesticSocial
 DOMAIN,szminorshort.weixin.qq.com,DomesticSocial
@@ -43,6 +44,21 @@ DOMAIN-KEYWORD,normal-c-lq,DomesticSocial
 DOMAIN-KEYWORD,normal-lq,DomesticSocial
 DOMAIN-KEYWORD,search-quic-lq,DomesticSocial
 DOMAIN-KEYWORD,search-lq,DomesticSocial
+DOMAIN-KEYWORD,-normal-,DomesticSocial
+DOMAIN-KEYWORD,-core-,DomesticSocial
+DOMAIN-KEYWORD,-misc-,DomesticSocial
+DOMAIN-KEYWORD,-search-,DomesticSocial
+DOMAIN-KEYWORD,-aweme-,DomesticSocial
+DOMAIN-SUFFIX,amemv.com,DomesticSocial
+DOMAIN-SUFFIX,zijieapi.com,DomesticSocial
+DOMAIN-SUFFIX,awemeughun.com,DomesticSocial
+DOMAIN-SUFFIX,ecombdapi.com,DomesticSocial
+DOMAIN-SUFFIX,bytegecko.com,DomesticSocial
+DOMAIN-SUFFIX,ttwebview.com,DomesticSocial
+DOMAIN-SUFFIX,bytetcc.com,DomesticSocial
+DOMAIN,sso.douyin.com,DomesticSocial
+DOMAIN,www.douyin.com,DomesticSocial
+DOMAIN-SUFFIX,snssdk.com,DomesticSocial
 DOMAIN-SUFFIX,toutiaoapi.com,DomesticSocial
 DOMAIN-SUFFIX,gifshow.com,DomesticSocial
 DOMAIN-SUFFIX,ksapisrv.com,DomesticSocial

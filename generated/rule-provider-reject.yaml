@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-reject.yaml v0.3.0 d6b83280a36fb1cfa7290ddc8fb95abec4b9826a
+# anti-ip-attribution rule-provider-reject.yaml v0.3.0 c0c939d843742014b138208ff32513e6d734c2ff
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
