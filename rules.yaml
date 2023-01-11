@@ -51,6 +51,7 @@ config:
     - DOMAIN,gsp0.baidu.com # 百度追踪？
     - DOMAIN,hm.baidu.com # 百度统计
     - DOMAIN,www.baidu.com # 网友提供贴吧IP定位接口
+    - DOMAIN,tiebac.baidu.com # 贴吧App API域名
     # ======= 微信 ======= #
     # 微信通用
     - DOMAIN,szshort.weixin.qq.com # 用途未知
