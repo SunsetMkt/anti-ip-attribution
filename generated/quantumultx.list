@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.0 c0c939d843742014b138208ff32513e6d734c2ff
+# anti-ip-attribution quantumultx.list v0.3.0 82f8ba175f05ca1f6e5f35ed04401360e2eb3907
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN-SUFFIX,biliapi.net,IP
@@ -45,17 +45,6 @@ DOMAIN-KEYWORD,normal-lq,IP
 DOMAIN-KEYWORD,search-quic-lq,IP
 DOMAIN-KEYWORD,search-lq,IP
 DOMAIN-KEYWORD,-normal-,IP
-DOMAIN-KEYWORD,-core-,IP
-DOMAIN-KEYWORD,-misc-,IP
-DOMAIN-KEYWORD,-search-,IP
-DOMAIN-KEYWORD,-aweme-,IP
-DOMAIN-SUFFIX,amemv.com,IP
-DOMAIN-SUFFIX,zijieapi.com,IP
-DOMAIN-SUFFIX,awemeughun.com,IP
-DOMAIN-SUFFIX,ecombdapi.com,IP
-DOMAIN-SUFFIX,bytegecko.com,IP
-DOMAIN-SUFFIX,ttwebview.com,IP
-DOMAIN-SUFFIX,bytetcc.com,IP
 DOMAIN,sso.douyin.com,IP
 DOMAIN,www.douyin.com,IP
 DOMAIN-SUFFIX,snssdk.com,IP
