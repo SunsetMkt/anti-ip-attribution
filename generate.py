@@ -66,6 +66,15 @@ def seprate_comma(string):
     '''分割字符串'''
     return string.split(',')
 
+def yaml_list(rules):
+    '''yaml写法转list写法'''
+    ret=[]
+    for rule in rules:
+        seprated = seprate_comma(rule)
+        seprated.pop()
+        ret.append(','.join(seprated))
+    return ret
+
 
 def check_rules(config):
     '''检查规则是否有误'''
@@ -176,6 +185,33 @@ def generate_rule_provider(config):
     output['payload'] = rules
     output = comment + get_yaml_string(output)
     save_string(output, os.path.join('generated', 'rule-provider.yaml'))
+
+    # Direct rules list
+    print('生成rule-provider-direct.list')
+    comment = get_head_comment(config, 'rule-provider-direct.list',
+                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
+    output = {}
+    output['payload'] = yaml_list(direct)
+    output = comment + get_yaml_string(output)
+    save_string(output, os.path.join('generated', 'rule-provider-direct.list'))
+
+    # Proxy rules list
+    print('生成rule-provider-proxy.list')
+    comment = get_head_comment(config, 'rule-provider-proxy.list',
+                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
+    output = {}
+    output['payload'] = proxy
+    output = comment + get_yaml_string(output)
+    save_string(output, os.path.join('generated', 'rule-provider-proxy.list'))
+
+    # Reject rules list
+    print('生成rule-provider-reject.list')
+    comment = get_head_comment(config, 'rule-provider-reject.list',
+                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
+    output = {}
+    output['payload'] = yaml_list(reject)
+    output = comment + get_yaml_string(output)
+    save_string(output, os.path.join('generated', 'rule-provider-reject.list'))
     # Direct rules
     print('生成rule-provider-direct.yaml')
     comment = get_head_comment(config, 'rule-provider-direct.yaml',
