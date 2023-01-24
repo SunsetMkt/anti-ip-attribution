@@ -189,28 +189,28 @@ def generate_rule_provider(config):
     save_string(output, os.path.join('generated', 'rule-provider.yaml'))
 
     # Direct rules list
-    print('生成rule-provider-direct.list')
-    comment = get_head_comment(config, 'rule-provider-direct.list',
-                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
+    print('生成rule-set-direct.list')
+    comment = get_head_comment(config, 'rule-set-direct.list',
+                               '适用于Clash RULE-SET')
     output = yaml_list(direct)
     output = comment + get_list_string(output)
-    save_string(output, os.path.join('generated', 'rule-provider-direct.list'))
+    save_string(output, os.path.join('generated', 'rule-set-direct.list'))
 
     # Proxy rules list
-    print('生成rule-provider-proxy.list')
-    comment = get_head_comment(config, 'rule-provider-proxy.list',
-                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
+    print('生成rule-set-proxy.list')
+    comment = get_head_comment(config, 'rule-set-proxy.list',
+                               '适用于Clash RULE-SET')
     output = proxy
     output = comment + get_list_string(output)
-    save_string(output, os.path.join('generated', 'rule-provider-proxy.list'))
+    save_string(output, os.path.join('generated', 'rule-set-proxy.list'))
 
     # Reject rules list
-    print('生成rule-provider-reject.list')
-    comment = get_head_comment(config, 'rule-provider-reject.list',
-                               '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
+    print('生成rule-set-reject.list')
+    comment = get_head_comment(config, 'rule-set-reject.list',
+                               '适用于Clash RULE-SET')
     output = yaml_list(reject) 
     output = comment + get_list_string(output)
-    save_string(output, os.path.join('generated', 'rule-provider-reject.list'))
+    save_string(output, os.path.join('generated', 'rule-set-reject.list'))
     # Direct rules
     print('生成rule-provider-direct.yaml')
     comment = get_head_comment(config, 'rule-provider-direct.yaml',
