@@ -1,0 +1,8 @@
+# 针对部分网站显示IP归属地的分流规则
+# anti-ip-attribution rule-set-reject.list v0.3.0 0345b23dbc0a6b902550240abc1aca25b5aa5d06
+# https://github.com/lwd-temp/anti-ip-attribution
+# 适用于Clash RULE-SET
+IP-CIDR,203.107.1.0/24
+IP-CIDR,118.89.204.198/23
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40
+IP-CIDR,119.29.29.98/32
