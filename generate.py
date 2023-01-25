@@ -66,6 +66,17 @@ def seprate_comma(string):
     '''分割字符串'''
     return string.split(',')
 
+def yaml_list(rules):
+    '''yaml写法转list写法'''
+    ret=[]
+    for rule in rules:
+        seprated = seprate_comma(rule)
+        seprated.pop()
+        ret.append(','.join(seprated))
+    return ret
+
+def get_list_string(list):
+    return '\n'.join(list)
 
 def check_rules(config):
     '''检查规则是否有误'''
@@ -176,6 +187,30 @@ def generate_rule_provider(config):
     output['payload'] = rules
     output = comment + get_yaml_string(output)
     save_string(output, os.path.join('generated', 'rule-provider.yaml'))
+
+    # Direct rules list
+    print('生成rule-set-direct.list')
+    comment = get_head_comment(config, 'rule-set-direct.list',
+                               '适用于Clash RULE-SET')
+    output = yaml_list(direct)
+    output = comment + get_list_string(output)
+    save_string(output, os.path.join('generated', 'rule-set-direct.list'))
+
+    # Proxy rules list
+    print('生成rule-set-proxy.list')
+    comment = get_head_comment(config, 'rule-set-proxy.list',
+                               '适用于Clash RULE-SET')
+    output = proxy
+    output = comment + get_list_string(output)
+    save_string(output, os.path.join('generated', 'rule-set-proxy.list'))
+
+    # Reject rules list
+    print('生成rule-set-reject.list')
+    comment = get_head_comment(config, 'rule-set-reject.list',
+                               '适用于Clash RULE-SET')
+    output = yaml_list(reject) 
+    output = comment + get_list_string(output)
+    save_string(output, os.path.join('generated', 'rule-set-reject.list'))
     # Direct rules
     print('生成rule-provider-direct.yaml')
     comment = get_head_comment(config, 'rule-provider-direct.yaml',
