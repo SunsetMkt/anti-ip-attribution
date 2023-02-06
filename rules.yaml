@@ -235,3 +235,17 @@ config:
     - DOMAIN,bbs-api.mihoyo.com
     # - DOMAIN,api-takumi.mihoyo.com
     # - DOMAIN,log-upload.mihoyo.com
+    # ======= MIUI ======= #
+    # 应用包管理组件API
+    # - DOMAIN,api.installer.xiaomi.com,REJECT
+    # miui-tracking
+    # - DOMAIN,tracking.miui.com,REJECT
+    # - DOMAIN,tracking.intl.miui.com,REJECT
+    # - DOMAIN,tracking.rus.miui.com,REJECT
+    # - DOMAIN,tracking.india.miui.com,REJECT
+    # 病毒扫描
+    # - DOMAIN-SUFFIX,sec.miui.com,REJECT
+    # - DOMAIN-SUFFIX,sec.intl.miui.com,REJECT
+    # - DOMAIN,api.sec.miui.com,REJECT
+    # - DOMAIN,staging.sec.miui.com,REJECT
+    # - DOMAIN,a0.app.xiaomi.com,REJECT
