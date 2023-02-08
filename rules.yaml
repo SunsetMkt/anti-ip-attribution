@@ -91,7 +91,16 @@ config:
     - DOMAIN-KEYWORD,search-lq
     # Update #32
     # Append
-    - DOMAIN-KEYWORD,-normal-
+    # https://github.com/lwd-temp/anti-ip-attribution/issues/33#issuecomment-1421094069
+    # - DOMAIN-KEYWORD,-normal-
+    - DOMAIN-SUFFIX,zijieapi.com,DIRECT
+    - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+    - DOMAIN-KEYWORD,-normal-hl
+    - DOMAIN-KEYWORD,-normal-c-hl
+    - DOMAIN-KEYWORD,-core-c-hl
+    - DOMAIN-KEYWORD,-normal-lf
+    - DOMAIN-KEYWORD,-normal-c-lf
+    - DOMAIN-KEYWORD,-core-c-lf
     # - DOMAIN-KEYWORD,-core-
     # - DOMAIN-KEYWORD,-misc-
     # - DOMAIN-KEYWORD,-search-
