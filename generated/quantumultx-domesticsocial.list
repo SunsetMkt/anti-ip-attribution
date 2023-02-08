@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 96ef4d8dff83ba8076fc8275e94f35736e5b665a
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 2b042a331ba25a16f3a9a8ac59ce5b55e85f15f5
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN-SUFFIX,biliapi.net,DomesticSocial
@@ -44,7 +44,14 @@ DOMAIN-KEYWORD,normal-c-lq,DomesticSocial
 DOMAIN-KEYWORD,normal-lq,DomesticSocial
 DOMAIN-KEYWORD,search-quic-lq,DomesticSocial
 DOMAIN-KEYWORD,search-lq,DomesticSocial
-DOMAIN-KEYWORD,-normal-,DomesticSocial
+DOMAIN-SUFFIX,zijieapi.com,DIRECT
+DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+DOMAIN-KEYWORD,-normal-hl,DomesticSocial
+DOMAIN-KEYWORD,-normal-c-hl,DomesticSocial
+DOMAIN-KEYWORD,-core-c-hl,DomesticSocial
+DOMAIN-KEYWORD,-normal-lf,DomesticSocial
+DOMAIN-KEYWORD,-normal-c-lf,DomesticSocial
+DOMAIN-KEYWORD,-core-c-lf,DomesticSocial
 DOMAIN,sso.douyin.com,DomesticSocial
 DOMAIN,www.douyin.com,DomesticSocial
 DOMAIN-SUFFIX,snssdk.com,DomesticSocial
