@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 # 针对部分网站显示IP归属地的分流规则
 # anti-ip-attribution generate.py
 # https://github.com/lwd-temp/anti-ip-attribution
