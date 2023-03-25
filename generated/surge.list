@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.0 9a2251661b56fefe251fc447776c3a216b39f29e
+# anti-ip-attribution surge.list v0.3.0 e2049c1e1381dfbf8cd8aa48bfc3b3b733a2b9bf
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN-SUFFIX,biliapi.net
@@ -32,6 +32,9 @@ DOMAIN,www.baidu.com
 DOMAIN,tiebac.baidu.com
 IP-CIDR,180.76.76.0/24
 DOMAIN,httpsdns.baidu.com
+DOMAIN,c.tieba.baidu.com
+DOMAIN,httpdns.baidu.com
+DOMAIN,httpdns.baidubce.com
 DOMAIN,szshort.weixin.qq.com
 DOMAIN,szextshort.weixin.qq.com
 DOMAIN,szminorshort.weixin.qq.com

@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.0 9a2251661b56fefe251fc447776c3a216b39f29e
+# anti-ip-attribution quantumultx.list v0.3.0 e2049c1e1381dfbf8cd8aa48bfc3b3b733a2b9bf
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN-SUFFIX,biliapi.net,IP
@@ -32,6 +32,9 @@ DOMAIN,www.baidu.com,IP
 DOMAIN,tiebac.baidu.com,IP
 IP-CIDR,180.76.76.0/24,IP
 DOMAIN,httpsdns.baidu.com,IP
+DOMAIN,c.tieba.baidu.com,IP
+DOMAIN,httpdns.baidu.com,IP
+DOMAIN,httpdns.baidubce.com,IP
 DOMAIN,szshort.weixin.qq.com,IP
 DOMAIN,szextshort.weixin.qq.com,IP
 DOMAIN,szminorshort.weixin.qq.com,IP
