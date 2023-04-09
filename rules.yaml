@@ -275,3 +275,7 @@ config:
     - IP-CIDR,81.70.124.99/32
     - IP-CIDR,81.70.125.19/32
     - IP-CIDR,140.143.177.206/32
+    # ======= 小黑盒 ======= #
+    # 小黑盒主域名，包括文章之类（图片CDN等静态资源不在此域名范围内）
+    # https://github.com/lwd-temp/anti-ip-attribution/issues/39
+    - DOMAIN,api.xiaoheihe.cn
