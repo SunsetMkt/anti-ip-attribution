@@ -248,6 +248,9 @@ config:
     - DOMAIN-SUFFIX,douyu.com
     # ======= 米游社 ======= #
     - DOMAIN,bbs-api.mihoyo.com
+    # https://github.com/lwd-temp/anti-ip-attribution/issues/39
+    # 米游社主域名已从 bbs.mihoyo.com 302至 miyoushe.com
+    - DOMAIN,bbs-api.miyoushe.com
     # - DOMAIN,api-takumi.mihoyo.com
     # - DOMAIN,log-upload.mihoyo.com
     # ======= MIUI ======= #
