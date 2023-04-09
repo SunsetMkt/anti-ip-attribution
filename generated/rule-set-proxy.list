@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-proxy.list v0.3.0 e2049c1e1381dfbf8cd8aa48bfc3b3b733a2b9bf
+# anti-ip-attribution rule-set-proxy.list v0.3.0 2e81800f2e335300ea8ac5669eabd42de12739bc
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,biliapi.net
@@ -98,8 +98,10 @@ IP-CIDR,59.111.19.53/32
 DOMAIN-SUFFIX,douyucdn.cn
 DOMAIN-SUFFIX,douyu.com
 DOMAIN,bbs-api.mihoyo.com
+DOMAIN,bbs-api.miyoushe.com
 DOMAIN-SUFFIX,douban.com
 IP-CIDR,49.233.242.15/32
 IP-CIDR,81.70.124.99/32
 IP-CIDR,81.70.125.19/32
 IP-CIDR,140.143.177.206/32
+DOMAIN,api.xiaoheihe.cn
