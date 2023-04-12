@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-direct.list v0.3.0 2e81800f2e335300ea8ac5669eabd42de12739bc
+# anti-ip-attribution rule-set-direct.list v0.3.0 e57776ed2c522cff25b97ff10976af8b9f26515a
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,zijieapi.com
@@ -17,3 +17,4 @@ DOMAIN-SUFFIX,tc-tct1.douyucdn.cn
 DOMAIN-SUFFIX,wsproxy.douyu.com
 DOMAIN-SUFFIX,danmuproxy.douyu.com
 DOMAIN-SUFFIX,img.douyucdn.cn
+DOMAIN,y.qq.com

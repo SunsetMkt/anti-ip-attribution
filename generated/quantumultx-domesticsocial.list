@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 2e81800f2e335300ea8ac5669eabd42de12739bc
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 e57776ed2c522cff25b97ff10976af8b9f26515a
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN-SUFFIX,biliapi.net,DomesticSocial
@@ -124,3 +124,5 @@ IP-CIDR,81.70.124.99/32,DomesticSocial
 IP-CIDR,81.70.125.19/32,DomesticSocial
 IP-CIDR,140.143.177.206/32,DomesticSocial
 DOMAIN,api.xiaoheihe.cn,DomesticSocial
+DOMAIN,y.qq.com,DIRECT
+DOMAIN-SUFFIX,y.qq.com,DomesticSocial
