@@ -279,3 +279,7 @@ config:
     # 小黑盒主域名，包括文章之类（图片CDN等静态资源不在此域名范围内）
     # https://github.com/lwd-temp/anti-ip-attribution/issues/39
     - DOMAIN,api.xiaoheihe.cn
+    # ======= QQ音乐 ======= #
+    # 测试
+    - DOMAIN,y.qq.com,DIRECT # 图片资源，直连
+    - DOMAIN-SUFFIX,y.qq.com # u*.y.qq.com
