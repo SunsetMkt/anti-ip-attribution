@@ -283,3 +283,5 @@ config:
     # 测试
     - DOMAIN,y.qq.com,DIRECT # 图片资源，直连
     - DOMAIN-SUFFIX,y.qq.com # u*.y.qq.com
+    # ======= 森空岛 ====== #
+    - DOMAIN,zonai.skland.com
