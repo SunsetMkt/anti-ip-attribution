@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-proxy.list v0.3.0 b38fca55691235e8b59879093163d971ce803e2e
+# anti-ip-attribution rule-set-proxy.list v0.3.0 9b0a352868be93d1a02e1a6f5b010e225e014a62
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,biliapi.net
@@ -107,3 +107,4 @@ IP-CIDR,140.143.177.206/32
 DOMAIN,api.xiaoheihe.cn
 DOMAIN-SUFFIX,y.qq.com
 DOMAIN,zonai.skland.com
+DOMAIN-SUFFIX,soulapp.cn
