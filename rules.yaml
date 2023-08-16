@@ -285,3 +285,13 @@ config:
     - DOMAIN-SUFFIX,y.qq.com # u*.y.qq.com
     # ======= 森空岛 ====== #
     - DOMAIN,zonai.skland.com
+    # ======= Soul ======= #
+    # https://www.soulapp.cn/
+    # 目前采取了比较激进的策略
+    # 疑似图片资源，直连
+    - DOMAIN,china-img.soulapp.cn,DIRECT
+    - DOMAIN,img.soulapp.cn,DIRECT
+    # 其余可疑API域名
+    # - DOMAIN-SUFFIX,getui.com # 个推，专业的数据智能服务商-为垂直领域提供数据智能解决方案
+    - DOMAIN-SUFFIX,soulapp.cn
+    # - DOMAIN-SUFFIX,qchannel03.cn # 功能未知，但检测到对此的请求
