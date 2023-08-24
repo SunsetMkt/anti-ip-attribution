@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-direct.list v0.3.0 9b0a352868be93d1a02e1a6f5b010e225e014a62
+# anti-ip-attribution rule-set-direct.list v0.3.0 a2741cfa8b903b4c1d4d7b8db8ba49e8428967fd
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,zijieapi.com
