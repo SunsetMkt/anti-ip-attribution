@@ -18,6 +18,7 @@ import sys
 
 import git
 import yaml
+import copy
 
 
 def read_yaml(file):
@@ -71,7 +72,13 @@ def yaml_list(rules):
     ret=[]
     for rule in rules:
         seprated = seprate_comma(rule)
-        seprated.pop()
+        # if rule.startswith('IP-CIDR'):
+        #     # 'IP-CIDR,203.107.1.0/24,REJECT,no-resolve'
+        #     del seprated[2]
+        # else:
+        #     # 'DOMAIN-SUFFIX,zijieapi.com,DIRECT'
+        #     seprated.pop()
+        del seprated[2]
         ret.append(','.join(seprated))
     return ret
 
@@ -163,24 +170,27 @@ def generate_rule_provider(config):
     '''生成rule-provider.yaml'''
     comment = get_head_comment(
         config, 'rule-provider.yaml', '适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider')
-    rules = config['config']['rules']
+    # 为了不影响其他软件规则的生成，使用深拷贝
+    rules = copy.deepcopy(config['config']['rules'])
+    
+    # 检查 IP rules 有无 `no-resolve` 字段，没有的话加上, 防止 DNS 泄漏
+    for i in range(len(rules)):
+        if rules[i].startswith('IP-CIDR') and 'no-resolve' not in rules[i]:
+            rules[i] = rules[i] + ',no-resolve'
+
     # https://github.com/lwd-temp/anti-ip-attribution/issues/23#issuecomment-1223931835
     direct = []
     proxy = []
     reject = []
     for rule in rules:
-        parts = seprate_comma(rule)
-        if len(parts) == 3:
-            if parts[2] == 'DIRECT':
-                direct.append(rule)
-            elif parts[2] == 'REJECT':
-                reject.append(rule)
-            elif parts[2] == 'no-resolve':
-                proxy.append(rule)
-            else:
-                proxy.append(rule)
-        elif len(parts) == 2:
+        
+        if 'REJECT' in rule:
+            reject.append(rule)
+        elif 'DIRECT' in rule:
+            direct.append(rule)
+        else:
             proxy.append(rule)
+
     # Summary of rules
     print('生成rule-provider.yaml')
     output = {}
