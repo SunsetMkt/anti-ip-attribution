@@ -25,9 +25,15 @@
 
 ## 关于 Clash for Windows
 
-Clash for Windows 已于 2023.11.2 删库，将不再积极支持`parser.yaml`（适用于 Clash for Windows 的配置文件预处理功能）。
+Clash for Windows 已于 2023.11.2 (UTC+8) 删库，将不再积极支持`parser.yaml`（适用于 Clash for Windows 的配置文件预处理功能）。
 
 如有需要，您仍可通过 [Internet Archive 的镜像](https://web.archive.org/web/20231030023222/https://github.com/Fndroid/clash_for_windows_pkg/releases)下载 Clash for Windows。若无此类特殊需求，您也可将使用的 Clash GUI 替换为[clash-verge](https://github.com/zzzgydi/clash-verge)。
+
+## 关于 Clash for Windows
+
+Clash 已于 2023.11.3 (UTC+8) 删库，我们暂不确定导致这一系列事件的具体原因。
+
+**请保持镇定。我们在一起。**
 
 ## 关于自动生成
 
