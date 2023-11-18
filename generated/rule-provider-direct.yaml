@@ -1,23 +1,6 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-direct.yaml v0.3.0 2249a952acc3937f449ad01901d78d3886dc5a1b
+# anti-ip-attribution rule-provider-direct.yaml v0.3.0 ca0e2ae6b4a945f4d04245e9e5e82e9982fb46f3
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
-- DOMAIN-SUFFIX,zijieapi.com,DIRECT
-- DOMAIN-SUFFIX,ecombdapi.com,DIRECT
-- DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,hls3a-akm.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,vplay1a.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,vplay3a.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,ws-tct.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
-- DOMAIN-SUFFIX,wsproxy.douyu.com,DIRECT
-- DOMAIN-SUFFIX,danmuproxy.douyu.com,DIRECT
-- DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
 - DOMAIN,y.qq.com,DIRECT
-- DOMAIN,china-img.soulapp.cn,DIRECT
-- DOMAIN,img.soulapp.cn,DIRECT

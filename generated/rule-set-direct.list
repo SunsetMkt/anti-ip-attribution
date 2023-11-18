@@ -1,22 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-direct.list v0.3.0 2249a952acc3937f449ad01901d78d3886dc5a1b
+# anti-ip-attribution rule-set-direct.list v0.3.0 ca0e2ae6b4a945f4d04245e9e5e82e9982fb46f3
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
-DOMAIN-SUFFIX,zijieapi.com
-DOMAIN-SUFFIX,ecombdapi.com
-DOMAIN-SUFFIX,hls3-akm.douyucdn.cn
-DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn
-DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn
-DOMAIN-SUFFIX,hls3a-akm.douyucdn.cn
-DOMAIN-SUFFIX,vplay1a.douyucdn.cn
-DOMAIN-SUFFIX,vplay3a.douyucdn.cn
-DOMAIN-SUFFIX,ws-tct.douyucdn.cn
-DOMAIN-SUFFIX,akm-tct.douyucdn.cn
-DOMAIN-SUFFIX,tx2play1.douyucdn.cn
-DOMAIN-SUFFIX,tc-tct1.douyucdn.cn
-DOMAIN-SUFFIX,wsproxy.douyu.com
-DOMAIN-SUFFIX,danmuproxy.douyu.com
-DOMAIN-SUFFIX,img.douyucdn.cn
 DOMAIN,y.qq.com
-DOMAIN,china-img.soulapp.cn
-DOMAIN,img.soulapp.cn
