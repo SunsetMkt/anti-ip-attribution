@@ -1,22 +1,12 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.0 2249a952acc3937f449ad01901d78d3886dc5a1b
+# anti-ip-attribution quantumultx.list v0.3.0 ed9552256ebb210b2b78aa0f9fdd88f4f9a5567d
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
+DOMAIN,httpdns.bilivideo.com,REJECT
 DOMAIN-SUFFIX,biliapi.net,IP
-DOMAIN,api.bilibili.com,IP
 DOMAIN,api.bilibili.tv,IP
-DOMAIN,app.bilibili.com,IP
 DOMAIN-SUFFIX,biliapi.com,IP
-DOMAIN,api.live.bilibili.com,IP
-DOMAIN,api.vc.bilibili.com,IP
-DOMAIN,passport.bilibili.com,IP
-DOMAIN,live-trace.bilibili.com,IP
-DOMAIN,message.bilibili.com,IP
-DOMAIN,cm.bilibili.com,IP
 DOMAIN-SUFFIX,bilibili.com,IP
-DOMAIN-SUFFIX,im9.com,IP
-DOMAIN-SUFFIX,acg.tv,IP
-DOMAIN-SUFFIX,biligame.com,IP
 IP-CIDR,203.107.1.0/24,REJECT
 DOMAIN-SUFFIX,weibo.cn,IP
 DOMAIN-SUFFIX,weibo.com,IP

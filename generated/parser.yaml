@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.0 2249a952acc3937f449ad01901d78d3886dc5a1b
+# anti-ip-attribution parser.yaml v0.3.0 ed9552256ebb210b2b78aa0f9fdd88f4f9a5567d
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -12,21 +12,11 @@ parsers:
       - DIRECT
       type: select
     prepend-rules:
+    - DOMAIN,httpdns.bilivideo.com,REJECT
     - "DOMAIN-SUFFIX,biliapi.net,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,api.bilibili.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,api.bilibili.tv,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,app.bilibili.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,biliapi.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,api.live.bilibili.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,api.vc.bilibili.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,passport.bilibili.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,live-trace.bilibili.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,message.bilibili.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,cm.bilibili.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,bilibili.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN-SUFFIX,im9.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN-SUFFIX,acg.tv,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN-SUFFIX,biligame.com,IP\u5F52\u5C5E\u5730"
     - IP-CIDR,203.107.1.0/24,REJECT
     - "DOMAIN-SUFFIX,weibo.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibo.com,IP\u5F52\u5C5E\u5730"
