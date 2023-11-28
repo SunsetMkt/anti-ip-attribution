@@ -16,7 +16,28 @@ config:
   rules: # 规则列表
     # ======= 哔哩哔哩 ======= #
     # 哔哩哔哩
+    # 阻止私有DNS
     - DOMAIN,httpdns.bilivideo.com,REJECT # issues/51
+    # KEY_EXT_P2P_HTTPDNS_BILI_IP
+    - IP-CIDR,47.101.175.206/32,REJECT
+    - IP-CIDR,47.100.123.169/32,REJECT
+    - IP-CIDR,120.46.169.234/32,REJECT
+    - IP-CIDR,121.36.72.124/32,REJECT
+    # KEY_EXT_P2P_BILIDNS_CMCC_IP
+    - IP-CIDR,116.63.10.135/32,REJECT
+    - IP-CIDR,122.9.7.134/32,REJECT
+    - IP-CIDR,117.185.228.108/32,REJECT
+    - IP-CIDR,117.144.238.29/32,REJECT
+    # KEY_EXT_P2P_BILIDNS_CT_IP
+    - IP-CIDR,122.9.13.79/32,REJECT
+    - IP-CIDR,122.9.15.129/32,REJECT
+    - IP-CIDR,101.91.140.224/32,REJECT
+    - IP-CIDR,101.91.140.124/32,REJECT
+    # KEY_EXT_P2P_BILIDNS_CU_IP
+    - IP-CIDR,114.116.215.110/32,REJECT
+    - IP-CIDR,116.63.10.31/32,REJECT
+    - IP-CIDR,112.64.218.119/32,REJECT
+    - IP-CIDR,112.65.200.117/32,REJECT
     - DOMAIN-SUFFIX,biliapi.net # 哔哩哔哩API域名
     # - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
     - DOMAIN,api.bilibili.tv # 哔哩哔哩海外版？
