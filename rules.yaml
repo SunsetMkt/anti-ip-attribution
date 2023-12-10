@@ -39,21 +39,27 @@ config:
     - IP-CIDR,112.64.218.119/32,REJECT
     - IP-CIDR,112.65.200.117/32,REJECT
     - DOMAIN-SUFFIX,biliapi.net # 哔哩哔哩API域名
-    # - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
-    - DOMAIN,api.bilibili.tv # 哔哩哔哩海外版？
-    # - DOMAIN,app.bilibili.com # 哔哩哔哩App的API域名
+    # - DOMAIN,api.bilibili.tv # 哔哩哔哩海外版？（使用性存疑）
     - DOMAIN-SUFFIX,biliapi.com # 哔哩哔哩App的API域名
+    - DOMAIN-SUFFIX,bilibili.com # 哔哩哔哩全站域名，不包括内容CDN
+    - IP-CIDR,203.107.1.0/24 #不需要REJECT，会影响其他HTTPDNS，仅代理即可
+    # issue/49,CDN内容直连
+    - DOMAIN-SUFFIX,bilivideo.com,DIRECT # 直播
+    - DOMAIN-SUFFIX,akamaized.net,DIRECT # akamai视频CDN
+    - DOMAIN-SUFFIX,hdslb.com,DIRECT # 静态内容
+    - DOMAIN-SUFFIX,szbdyd.com,DIRECT # PCDN(P2P)
+    # - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口 
+    # - DOMAIN,app.bilibili.com # 哔哩哔哩App的API域名    
     # - DOMAIN,api.live.bilibili.com # 哔哩哔哩直播API域名
     # - DOMAIN,api.vc.bilibili.com # 哔哩哔哩视频API域名，Copilot提供
     # - DOMAIN,passport.bilibili.com # 哔哩哔哩账号登录API域名
     # - DOMAIN,live-trace.bilibili.com # 哔哩哔哩跟踪？API域名
     # - DOMAIN,message.bilibili.com # 哔哩哔哩消息API域名
     # - DOMAIN,cm.bilibili.com # 哔哩哔哩统计API域名
-    - DOMAIN-SUFFIX,bilibili.com # 哔哩哔哩全站域名，不包括内容CDN
     # - DOMAIN-SUFFIX,im9.com
     # - DOMAIN-SUFFIX,acg.tv
     # - DOMAIN-SUFFIX,biligame.com
-    - IP-CIDR,203.107.1.0/24,REJECT
+    
     # ======= 微博 ======= #
     # 微博
     # issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
