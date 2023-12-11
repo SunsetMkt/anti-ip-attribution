@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-reject.list v0.3.0 2f46cd7101a50189bcc97ce9f80907e0908c49d8
+# anti-ip-attribution rule-set-reject.list v0.3.0 857758b353afcfe17941542e3a6b2a21bd28c0c4
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN,httpdns.bilivideo.com
@@ -19,7 +19,6 @@ IP-CIDR,114.116.215.110/32,no-resolve
 IP-CIDR,116.63.10.31/32,no-resolve
 IP-CIDR,112.64.218.119/32,no-resolve
 IP-CIDR,112.65.200.117/32,no-resolve
-IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,118.89.204.198/23,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,no-resolve
 IP-CIDR,119.29.29.98/32,no-resolve

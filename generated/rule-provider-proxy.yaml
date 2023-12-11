@@ -1,12 +1,12 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.0 2f46cd7101a50189bcc97ce9f80907e0908c49d8
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.0 857758b353afcfe17941542e3a6b2a21bd28c0c4
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
 - DOMAIN-SUFFIX,biliapi.net
-- DOMAIN,api.bilibili.tv
 - DOMAIN-SUFFIX,biliapi.com
 - DOMAIN-SUFFIX,bilibili.com
+- IP-CIDR,203.107.1.0/24,no-resolve
 - DOMAIN-SUFFIX,weibo.cn
 - DOMAIN-SUFFIX,weibo.com
 - DOMAIN-SUFFIX,weibocdn.com
