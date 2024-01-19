@@ -1,15 +1,11 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 ca0e2ae6b4a945f4d04245e9e5e82e9982fb46f3
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.0 a538535ff8899755c79df3961b6abf2035cf62a8
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN-SUFFIX,weibo.cn,DomesticSocial
 DOMAIN-SUFFIX,weibo.com,DomesticSocial
 DOMAIN-SUFFIX,weibocdn.com,DomesticSocial
 DOMAIN-KEYWORD,weibo,DomesticSocial
-DOMAIN,szshort.weixin.qq.com,DomesticSocial
-DOMAIN,szextshort.weixin.qq.com,DomesticSocial
-DOMAIN,szminorshort.weixin.qq.com,DomesticSocial
-DOMAIN,mp.weixin.qq.com,DomesticSocial
 DOMAIN-SUFFIX,zhihu.com,DomesticSocial
 IP-CIDR,103.41.167.0/24,DomesticSocial
 IP-CIDR,118.89.204.198/23,REJECT
