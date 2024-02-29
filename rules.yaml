@@ -257,6 +257,10 @@ config:
     - IP-CIDR,59.111.160.195/32
     - IP-CIDR,59.111.19.33/32
     - IP-CIDR,59.111.19.53/32
+    # ======= Lofter ======= #
+    - DOMAIN-SUFFIX,lofter.com
+    - DOMAIN,yaolu.yuedu.163.com
+    - DOMAIN-SUFFIX,lf127.net,DIRECT
     # ======= 斗鱼 ======= #
     # https://github.com/lwd-temp/anti-ip-attribution/issues/23
     # direct斗鱼直播流 https://github.com/wbt5/real-url/issues/340
