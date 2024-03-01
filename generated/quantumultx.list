@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.1 b325d335c57ee0591d668c5945db1c8f6f9db352
+# anti-ip-attribution quantumultx.list v0.3.1 52e0ac42ddeb193c0c50f8fc0047270dd4cb82e0
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -112,6 +112,9 @@ IP-CIDR,45.254.48.1/32,IP
 IP-CIDR,59.111.160.195/32,IP
 IP-CIDR,59.111.19.33/32,IP
 IP-CIDR,59.111.19.53/32,IP
+DOMAIN-SUFFIX,lofter.com,IP
+DOMAIN,yaolu.yuedu.163.com,IP
+DOMAIN-SUFFIX,lf127.net,DIRECT
 DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
 DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
 DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT

@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 b325d335c57ee0591d668c5945db1c8f6f9db352
+# anti-ip-attribution parser.yaml v0.3.1 52e0ac42ddeb193c0c50f8fc0047270dd4cb82e0
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -122,6 +122,9 @@ parsers:
     - "IP-CIDR,59.111.160.195/32,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,59.111.19.33/32,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,59.111.19.53/32,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,lofter.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,yaolu.yuedu.163.com,IP\u5F52\u5C5E\u5730"
+    - DOMAIN-SUFFIX,lf127.net,DIRECT
     - DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
     - DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
     - DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT
