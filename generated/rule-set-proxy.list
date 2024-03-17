@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-proxy.list v0.3.1 52e0ac42ddeb193c0c50f8fc0047270dd4cb82e0
+# anti-ip-attribution rule-set-proxy.list v0.3.1 6d0d4a0b61f20df3def3861814ed4fe942b19bab
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,biliapi.net
@@ -48,6 +48,7 @@ DOMAIN-SUFFIX,toutiaoapi.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,ksapisrv.com
 DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-KEYWORD,xiaohongshu
 DOMAIN,keylol.com
 DOMAIN-SUFFIX,ixigua.com
 DOMAIN,www.wenshushu.cn

@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 52e0ac42ddeb193c0c50f8fc0047270dd4cb82e0
+# anti-ip-attribution parser.yaml v0.3.1 6d0d4a0b61f20df3def3861814ed4fe942b19bab
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -83,6 +83,7 @@ parsers:
     - "DOMAIN-SUFFIX,gifshow.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,ksapisrv.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,xiaohongshu.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,xiaohongshu,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,keylol.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,ixigua.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,www.wenshushu.cn,IP\u5F52\u5C5E\u5730"
