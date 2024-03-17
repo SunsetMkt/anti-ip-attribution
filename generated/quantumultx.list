@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.1 6d0d4a0b61f20df3def3861814ed4fe942b19bab
+# anti-ip-attribution quantumultx.list v0.3.1 462d104fcda50d3f461b1ef9c556c94337c5f919
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -78,6 +78,7 @@ DOMAIN,keylol.com,IP
 DOMAIN-SUFFIX,ixigua.com,IP
 DOMAIN,www.wenshushu.cn,IP
 IP-CIDR,119.29.29.98/32,REJECT
+IP-CIDR,120.53.130.158/32,IP
 DOMAIN,frodo.douban.com,IP
 DOMAIN,www.douban.com,IP
 DOMAIN,api.coolapk.com,IP
