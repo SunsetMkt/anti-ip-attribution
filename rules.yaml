@@ -187,6 +187,7 @@ config:
     # iOS客户端
     # 目前无法可靠地处理iOS端的请求，建议全局代理
     - IP-CIDR,119.29.29.98/32,REJECT
+    - IP-CIDR,120.53.130.158/32 # issue#56
     - DOMAIN,frodo.douban.com
     # 网页端
     - DOMAIN,www.douban.com
