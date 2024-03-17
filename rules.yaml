@@ -48,8 +48,8 @@ config:
     - DOMAIN-SUFFIX,akamaized.net,DIRECT # akamai视频CDN
     - DOMAIN-SUFFIX,hdslb.com,DIRECT # 静态内容
     - DOMAIN-SUFFIX,szbdyd.com,DIRECT # PCDN(P2P)
-    # - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口 
-    # - DOMAIN,app.bilibili.com # 哔哩哔哩App的API域名    
+    # - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
+    # - DOMAIN,app.bilibili.com # 哔哩哔哩App的API域名
     # - DOMAIN,api.live.bilibili.com # 哔哩哔哩直播API域名
     # - DOMAIN,api.vc.bilibili.com # 哔哩哔哩视频API域名，Copilot提供
     # - DOMAIN,passport.bilibili.com # 哔哩哔哩账号登录API域名
@@ -59,7 +59,6 @@ config:
     # - DOMAIN-SUFFIX,im9.com
     # - DOMAIN-SUFFIX,acg.tv
     # - DOMAIN-SUFFIX,biligame.com
-    
     # ======= 微博 ======= #
     # 微博
     # issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
@@ -173,6 +172,7 @@ config:
     # ======= 小红书 ======= #
     # issue#4 提供
     - DOMAIN-SUFFIX,xiaohongshu.com
+    - DOMAIN-KEYWORD,xiaohongshu
     # ======= 其乐论坛 ======= #
     # issue#11 提供
     - DOMAIN,keylol.com # 评论区
