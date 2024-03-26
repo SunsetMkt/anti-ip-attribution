@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 2b89916316f098c3aef120c0318b01098a1709af
+# anti-ip-attribution parser.yaml v0.3.1 e6b145d18f62d0005e7024fada6e6ee0b170b751
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -40,6 +40,9 @@ parsers:
     - "DOMAIN-SUFFIX,weibo.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibo.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibocdn.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,wbimg.cn,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,wbimg.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,sinaimg.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,weibo,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,tieba.baidu.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,tbmsg.baidu.com,IP\u5F52\u5C5E\u5730"
