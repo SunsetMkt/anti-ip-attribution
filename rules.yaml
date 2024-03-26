@@ -68,6 +68,9 @@ config:
     - DOMAIN-SUFFIX,weibo.cn
     - DOMAIN-SUFFIX,weibo.com
     - DOMAIN-SUFFIX,weibocdn.com
+    - DOMAIN-SUFFIX,wbimg.cn
+    - DOMAIN-SUFFIX,wbimg.com
+    - DOMAIN-SUFFIX,sinaimg.cn
     - DOMAIN-KEYWORD,weibo
     # ======= 百度贴吧 ======= #
     # 百度贴吧
