@@ -13,12 +13,12 @@
 # surge.list Surge分流规则
 # quantumultx.list QuantumultX分流规则
 # quantumultx-domesticsocial.list QuantumultX分流规则，策略组名称为DomesticSocial
+import copy
 import os
 import sys
 
 import git
 import yaml
-import copy
 
 
 def read_yaml(file):
@@ -251,10 +251,20 @@ def generate_surge(config):
     '''生成surge.list'''
     comment = get_head_comment(
         config, 'surge.list', 'Surge分流规则')
-    rules = ''
-    for rule in config['config']['rules']:
-        rules += rule + '\n'
-    output = comment + rules
+
+    # 为了不影响其他软件规则的生成，使用深拷贝
+    rules = copy.deepcopy(config["config"]["rules"])
+
+    # 检查 IP rules 有无 `no-resolve` 字段，没有的话加上, 防止 DNS 泄漏
+    for i in range(len(rules)):
+        if rules[i].startswith("IP-CIDR") and "no-resolve" not in rules[i]:
+            rules[i] = rules[i] + ",no-resolve"
+
+    gen_rules = ''
+
+    for rule in rules:
+        gen_rules += rule + '\n'
+    output = comment + gen_rules 
     save_string(output, os.path.join('generated', 'surge.list'))
 
 
