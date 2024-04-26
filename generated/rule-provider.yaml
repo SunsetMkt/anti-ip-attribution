@@ -20,8 +20,6 @@ payload:
 - IP-CIDR,116.63.10.31/32,REJECT,no-resolve
 - IP-CIDR,112.64.218.119/32,REJECT,no-resolve
 - IP-CIDR,112.65.200.117/32,REJECT,no-resolve
-- DOMAIN-SUFFIX,biliapi.net
-- DOMAIN-SUFFIX,biliapi.com
 - DOMAIN-SUFFIX,bilibili.com
 - IP-CIDR,203.107.1.0/24,no-resolve
 - DOMAIN-SUFFIX,bilivideo.com,DIRECT
