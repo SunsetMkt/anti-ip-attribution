@@ -273,6 +273,8 @@ config:
     # ======= 酷安 ======= #
     # issue#15提供
     - DOMAIN,api.coolapk.com
+    # issue#62
+    - DOMAIN,api2.coolapk.com
     # ======= TapTap ======= #
     # issue#16提供
     - DOMAIN,api.taptapdada.com
@@ -410,3 +412,9 @@ config:
     # - DOMAIN-SUFFIX,getui.com # 个推，专业的数据智能服务商-为垂直领域提供数据智能解决方案
     - DOMAIN-SUFFIX,soulapp.cn
     # - DOMAIN-SUFFIX,qchannel03.cn # 功能未知，但检测到对此的请求
+    # ======= 起点App ======= #
+    # issues#62
+    # 章评书评区IP（大部分业务都塞在这个域名下，api book search login一大堆）
+    - DOMAIN,druidv6.if.qidian.com
+    # 疑似个人主页IP（非实时变化，看到有个login建议加上）
+    - DOMAIN,ptlogin6.qidian.com
