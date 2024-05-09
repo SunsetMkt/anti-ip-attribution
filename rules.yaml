@@ -84,7 +84,7 @@ config:
     # Update #32
     - DOMAIN,tiebac.baidu.com # 贴吧App API域名
     # - DOMAIN-KEYWORD,tieba # 极端方案，可能会代理图片CDN
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/35#issuecomment-1438885974
+    # issue#35#issuecomment-1438885974
     - IP-CIDR,180.76.76.0/24 # Public DNS
     - DOMAIN,httpsdns.baidu.com
     - DOMAIN,c.tieba.baidu.com
@@ -108,7 +108,7 @@ config:
     - DOMAIN-SUFFIX,zhihu.com # 知乎全站域名，不包括图片CDN
     - IP-CIDR,103.41.167.0/24 # 网友提供知乎IP定位接口
     # 有报告iOS端使用规则后仍然泄露真实IP属地
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/24
+    # issue#24
     - IP-CIDR,118.89.204.198/23,REJECT # 知乎 HTTPDNS (IPv4)
     - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT # 知乎 HTTPDNS (IPv6)
     # ======= 国家反诈中心 ======= #
@@ -127,7 +127,7 @@ config:
     - DOMAIN-KEYWORD,search-lq
     # Update #32
     # Append
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/33#issuecomment-1421094069
+    # issue#33#issuecomment-1421094069
     # - DOMAIN-KEYWORD,-normal-
     - DOMAIN-SUFFIX,zijieapi.com,DIRECT
     - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
@@ -296,13 +296,13 @@ config:
     # 如有必要可以DOMAIN-SUFFIX,vip.miui.com
     - DOMAIN,api.vip.miui.com
     # ======= 网易云音乐 ======= #
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/21#issuecomment-1213136722
+    # issue#21#issuecomment-1213136722
     # - DOMAIN,music.163.com
     # https://lbs.netease.im/lbs/conf.jsp # httpdns
     # - DOMAIN,httpdns.n.netease.com,REJECT
     # - IP-CIDR,59.111.239.61/32,REJECT
     # - IP-CIDR,59.111.239.62/32,REJECT
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/21#issuecomment-1214307572
+    # issue#21#issuecomment-1214307572
     - DOMAIN-SUFFIX,music.163.com
     - DOMAIN,nstool.netease.com
     - DOMAIN,wanproxy.127.net
@@ -342,7 +342,7 @@ config:
     - DOMAIN,yaolu.yuedu.163.com
     - DOMAIN-SUFFIX,lf127.net,DIRECT
     # ======= 斗鱼 ======= #
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/23
+    # issue#23
     # direct斗鱼直播流 https://github.com/wbt5/real-url/issues/340
     - DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
     - DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
@@ -363,7 +363,7 @@ config:
     - DOMAIN-SUFFIX,douyu.com
     # ======= 米游社 ======= #
     - DOMAIN,bbs-api.mihoyo.com
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/39
+    # issue#39
     # 米游社主域名已从 bbs.mihoyo.com 302至 miyoushe.com
     - DOMAIN,bbs-api.miyoushe.com
     # - DOMAIN,api-takumi.mihoyo.com
@@ -383,7 +383,7 @@ config:
     # - DOMAIN,staging.sec.miui.com,REJECT
     # - DOMAIN,a0.app.xiaomi.com,REJECT
     # ======= 豆瓣 ======= #
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/37
+    # issue#37
     # IOS APP实测有效，其余设备不保证，doubanio.com的域名是加载图片的，实测直连不影响地区
     - DOMAIN-SUFFIX,douban.com
     - IP-CIDR,49.233.242.15/32
@@ -392,7 +392,7 @@ config:
     - IP-CIDR,140.143.177.206/32
     # ======= 小黑盒 ======= #
     # 小黑盒主域名，包括文章之类（图片CDN等静态资源不在此域名范围内）
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/39
+    # issue#39
     - DOMAIN,api.xiaoheihe.cn
     # ======= QQ音乐 ======= #
     # 测试
