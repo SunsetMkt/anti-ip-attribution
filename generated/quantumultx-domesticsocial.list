@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 a1716b4e8b74e363d5e1f9ee7b8675b0ec7cfa3c
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 65b6194f86182a7237b805a6587b9f437f78c5b6
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -159,6 +159,7 @@ IP-CIDR,120.53.130.158/32,DomesticSocial
 DOMAIN,frodo.douban.com,DomesticSocial
 DOMAIN,www.douban.com,DomesticSocial
 DOMAIN,api.coolapk.com,DomesticSocial
+DOMAIN,api2.coolapk.com,DomesticSocial
 DOMAIN,api.taptapdada.com,DomesticSocial
 DOMAIN,god.gameyw.netease.com,DomesticSocial
 DOMAIN-SUFFIX,huya.com,DomesticSocial
@@ -223,3 +224,5 @@ DOMAIN,zonai.skland.com,DomesticSocial
 DOMAIN,china-img.soulapp.cn,DIRECT
 DOMAIN,img.soulapp.cn,DIRECT
 DOMAIN-SUFFIX,soulapp.cn,DomesticSocial
+DOMAIN,druidv6.if.qidian.com,DomesticSocial
+DOMAIN,ptlogin6.qidian.com,DomesticSocial

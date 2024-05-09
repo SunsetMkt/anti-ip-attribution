@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 a1716b4e8b74e363d5e1f9ee7b8675b0ec7cfa3c
+# anti-ip-attribution parser.yaml v0.3.1 65b6194f86182a7237b805a6587b9f437f78c5b6
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -169,6 +169,7 @@ parsers:
     - "DOMAIN,frodo.douban.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,www.douban.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,api.coolapk.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,api2.coolapk.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,api.taptapdada.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,god.gameyw.netease.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,huya.com,IP\u5F52\u5C5E\u5730"
@@ -233,3 +234,5 @@ parsers:
     - DOMAIN,china-img.soulapp.cn,DIRECT
     - DOMAIN,img.soulapp.cn,DIRECT
     - "DOMAIN-SUFFIX,soulapp.cn,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,druidv6.if.qidian.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,ptlogin6.qidian.com,IP\u5F52\u5C5E\u5730"
