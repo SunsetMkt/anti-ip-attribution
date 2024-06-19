@@ -16,6 +16,7 @@ jobs:
       run: |
         pip3 install -r requirements.txt
         python3 generate.py
+        python3 generate_rule.py
     - name: 提交更改
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
