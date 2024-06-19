@@ -1,0 +1,30 @@
+# 针对部分网站显示IP归属地的分流规则
+# anti-ip-attribution rules.yaml
+# https://github.com/lwd-temp/anti-ip-attribution
+# 此文件用于记录用于生成其他配置文件的规则，任何更改仅需在此修改。
+# Actions会自动生成其他配置文件。
+# 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
+# 配置规范举例：
+# DOMAIN,example.com
+# DOMAIN-SUFFIX,example.com,REJECT
+# 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
+config:
+  name: "anti-ip-attribution" # 项目名
+  version: "v0.3.1" # 版本号
+  url: "https://github.com/lwd-temp/anti-ip-attribution" # 项目地址
+  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+  rules: # 规则列表
+    
+# ======= 知乎 ======= #
+
+    # 知乎
+    # - DOMAIN,zhihu-web-analytics.zhihu.com # 知乎统计API域名
+    # - DOMAIN,www.zhihu.com # 知乎主站域名，不存在单独有效的API域名
+    # - DOMAIN,api.zhihu.com # 知乎API域名
+    - DOMAIN-SUFFIX,zhihu.com # 知乎全站域名，不包括图片CDN
+    - IP-CIDR,103.41.167.0/24 # 网友提供知乎IP定位接口
+    # 有报告iOS端使用规则后仍然泄露真实IP属地
+    # issue#24
+    - IP-CIDR,118.89.204.198/23,REJECT # 知乎 HTTPDNS (IPv4)
+    - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT # 知乎 HTTPDNS (IPv6)
+    

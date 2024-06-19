@@ -1,0 +1,23 @@
+# 针对部分网站显示IP归属地的分流规则
+# anti-ip-attribution rules.yaml
+# https://github.com/lwd-temp/anti-ip-attribution
+# 此文件用于记录用于生成其他配置文件的规则，任何更改仅需在此修改。
+# Actions会自动生成其他配置文件。
+# 由于技术限制，只能实现精确到域名的分流规则，无法精确到路径。
+# 配置规范举例：
+# DOMAIN,example.com
+# DOMAIN-SUFFIX,example.com,REJECT
+# 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
+config:
+  name: "anti-ip-attribution" # 项目名
+  version: "v0.3.1" # 版本号
+  url: "https://github.com/lwd-temp/anti-ip-attribution" # 项目地址
+  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+  rules: # 规则列表
+    
+# ======= Lofter ======= #
+
+    - DOMAIN-SUFFIX,lofter.com
+    - DOMAIN,yaolu.yuedu.163.com
+    - DOMAIN-SUFFIX,lf127.net,DIRECT
+    
