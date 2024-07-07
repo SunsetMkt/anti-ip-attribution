@@ -120,6 +120,8 @@ config:
     - DOMAIN,sso.douyin.com # 登录
     - DOMAIN,www.douyin.com # Web版PC端
     - DOMAIN-SUFFIX,snssdk.com # API域名
+    - DOMAIN-SUFFIX,zjcdn.com,DIRECT
+    - DOMAIN-SUFFIX,douyincdn.com,DIRECT
     # ======= 小红书 ======= #
     # issue#4 提供
     - DOMAIN-SUFFIX,xiaohongshu.com
