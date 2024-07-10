@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.1 70b90f1485f73c825248f0221916c5f9dfd24ee7
+# anti-ip-attribution surge.list v0.3.1 fa3bc044241f7a6eb3dd0567e2401e6b882534e1
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -40,8 +40,6 @@ DOMAIN-KEYWORD,normal-c-lq
 DOMAIN-KEYWORD,normal-lq
 DOMAIN-KEYWORD,search-quic-lq
 DOMAIN-KEYWORD,search-lq
-DOMAIN-SUFFIX,zijieapi.com,DIRECT
-DOMAIN-SUFFIX,ecombdapi.com,DIRECT
 DOMAIN-KEYWORD,-normal-hl
 DOMAIN-KEYWORD,-normal-c-hl
 DOMAIN-KEYWORD,-core-c-hl

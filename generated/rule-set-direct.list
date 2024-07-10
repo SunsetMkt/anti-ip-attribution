@@ -1,12 +1,10 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-direct.list v0.3.1 70b90f1485f73c825248f0221916c5f9dfd24ee7
+# anti-ip-attribution rule-set-direct.list v0.3.1 fa3bc044241f7a6eb3dd0567e2401e6b882534e1
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,akamaized.net
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,szbdyd.com
-DOMAIN-SUFFIX,zijieapi.com
-DOMAIN-SUFFIX,ecombdapi.com
 DOMAIN-SUFFIX,zjcdn.com
 DOMAIN-SUFFIX,douyincdn.com
