@@ -86,8 +86,6 @@ config:
     # Append
     # issue#33#issuecomment-1421094069
     # - DOMAIN-KEYWORD,-normal-
-    - DOMAIN-SUFFIX,zijieapi.com,DIRECT
-    - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
     - DOMAIN-KEYWORD,-normal-hl
     - DOMAIN-KEYWORD,-normal-c-hl
     - DOMAIN-KEYWORD,-core-c-hl
