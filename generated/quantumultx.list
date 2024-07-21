@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.1 fa3bc044241f7a6eb3dd0567e2401e6b882534e1
+# anti-ip-attribution quantumultx.list v0.3.1 5d3dff915435faf92394e01cd8c80749c867226e
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -27,27 +27,8 @@ DOMAIN-SUFFIX,bilivideo.com,DIRECT
 DOMAIN-SUFFIX,akamaized.net,DIRECT
 DOMAIN-SUFFIX,hdslb.com,DIRECT
 DOMAIN-SUFFIX,szbdyd.com,DIRECT
-DOMAIN-SUFFIX,weibo.cn,IP
-DOMAIN-SUFFIX,weibo.com,IP
-DOMAIN-SUFFIX,weibocdn.com,IP
-DOMAIN-SUFFIX,wbimg.cn,IP
-DOMAIN-SUFFIX,wbimg.com,IP
-DOMAIN-SUFFIX,sinaimg.cn,IP
-DOMAIN-KEYWORD,weibo,IP
-DOMAIN-KEYWORD,core-c-lq,IP
-DOMAIN-KEYWORD,core-lq,IP
-DOMAIN-KEYWORD,normal-c-lq,IP
-DOMAIN-KEYWORD,normal-lq,IP
-DOMAIN-KEYWORD,search-quic-lq,IP
-DOMAIN-KEYWORD,search-lq,IP
-DOMAIN-KEYWORD,-normal-hl,IP
-DOMAIN-KEYWORD,-normal-c-hl,IP
-DOMAIN-KEYWORD,-core-c-hl,IP
-DOMAIN-KEYWORD,-normal-lf,IP
-DOMAIN-KEYWORD,-normal-c-lf,IP
-DOMAIN-KEYWORD,-core-c-lf,IP
-DOMAIN,sso.douyin.com,IP
-DOMAIN,www.douyin.com,IP
+DOMAIN-SUFFIX,amemv.com,IP
+DOMAIN-SUFFIX,douyin.com,IP
 DOMAIN-SUFFIX,snssdk.com,IP
 DOMAIN-SUFFIX,zjcdn.com,DIRECT
 DOMAIN-SUFFIX,douyincdn.com,DIRECT

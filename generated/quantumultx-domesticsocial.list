@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 fa3bc044241f7a6eb3dd0567e2401e6b882534e1
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 5d3dff915435faf92394e01cd8c80749c867226e
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -27,27 +27,8 @@ DOMAIN-SUFFIX,bilivideo.com,DIRECT
 DOMAIN-SUFFIX,akamaized.net,DIRECT
 DOMAIN-SUFFIX,hdslb.com,DIRECT
 DOMAIN-SUFFIX,szbdyd.com,DIRECT
-DOMAIN-SUFFIX,weibo.cn,DomesticSocial
-DOMAIN-SUFFIX,weibo.com,DomesticSocial
-DOMAIN-SUFFIX,weibocdn.com,DomesticSocial
-DOMAIN-SUFFIX,wbimg.cn,DomesticSocial
-DOMAIN-SUFFIX,wbimg.com,DomesticSocial
-DOMAIN-SUFFIX,sinaimg.cn,DomesticSocial
-DOMAIN-KEYWORD,weibo,DomesticSocial
-DOMAIN-KEYWORD,core-c-lq,DomesticSocial
-DOMAIN-KEYWORD,core-lq,DomesticSocial
-DOMAIN-KEYWORD,normal-c-lq,DomesticSocial
-DOMAIN-KEYWORD,normal-lq,DomesticSocial
-DOMAIN-KEYWORD,search-quic-lq,DomesticSocial
-DOMAIN-KEYWORD,search-lq,DomesticSocial
-DOMAIN-KEYWORD,-normal-hl,DomesticSocial
-DOMAIN-KEYWORD,-normal-c-hl,DomesticSocial
-DOMAIN-KEYWORD,-core-c-hl,DomesticSocial
-DOMAIN-KEYWORD,-normal-lf,DomesticSocial
-DOMAIN-KEYWORD,-normal-c-lf,DomesticSocial
-DOMAIN-KEYWORD,-core-c-lf,DomesticSocial
-DOMAIN,sso.douyin.com,DomesticSocial
-DOMAIN,www.douyin.com,DomesticSocial
+DOMAIN-SUFFIX,amemv.com,DomesticSocial
+DOMAIN-SUFFIX,douyin.com,DomesticSocial
 DOMAIN-SUFFIX,snssdk.com,DomesticSocial
 DOMAIN-SUFFIX,zjcdn.com,DIRECT
 DOMAIN-SUFFIX,douyincdn.com,DIRECT

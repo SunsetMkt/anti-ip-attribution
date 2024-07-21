@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider.yaml v0.3.1 fa3bc044241f7a6eb3dd0567e2401e6b882534e1
+# anti-ip-attribution rule-provider.yaml v0.3.1 5d3dff915435faf92394e01cd8c80749c867226e
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -28,27 +28,8 @@ payload:
 - DOMAIN-SUFFIX,akamaized.net,DIRECT
 - DOMAIN-SUFFIX,hdslb.com,DIRECT
 - DOMAIN-SUFFIX,szbdyd.com,DIRECT
-- DOMAIN-SUFFIX,weibo.cn
-- DOMAIN-SUFFIX,weibo.com
-- DOMAIN-SUFFIX,weibocdn.com
-- DOMAIN-SUFFIX,wbimg.cn
-- DOMAIN-SUFFIX,wbimg.com
-- DOMAIN-SUFFIX,sinaimg.cn
-- DOMAIN-KEYWORD,weibo
-- DOMAIN-KEYWORD,core-c-lq
-- DOMAIN-KEYWORD,core-lq
-- DOMAIN-KEYWORD,normal-c-lq
-- DOMAIN-KEYWORD,normal-lq
-- DOMAIN-KEYWORD,search-quic-lq
-- DOMAIN-KEYWORD,search-lq
-- DOMAIN-KEYWORD,-normal-hl
-- DOMAIN-KEYWORD,-normal-c-hl
-- DOMAIN-KEYWORD,-core-c-hl
-- DOMAIN-KEYWORD,-normal-lf
-- DOMAIN-KEYWORD,-normal-c-lf
-- DOMAIN-KEYWORD,-core-c-lf
-- DOMAIN,sso.douyin.com
-- DOMAIN,www.douyin.com
+- DOMAIN-SUFFIX,amemv.com
+- DOMAIN-SUFFIX,douyin.com
 - DOMAIN-SUFFIX,snssdk.com
 - DOMAIN-SUFFIX,zjcdn.com,DIRECT
 - DOMAIN-SUFFIX,douyincdn.com,DIRECT
