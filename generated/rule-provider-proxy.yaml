@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 9532e914635f11c0eafd4ae0d5c20634dbcd294c
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 8d0c520857f095a3b451c71f8c326b50299e6022
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -184,3 +184,4 @@ payload:
 - DOMAIN-SUFFIX,soulapp.cn
 - DOMAIN,druidv6.if.qidian.com
 - DOMAIN,ptlogin6.qidian.com
+- DOMAIN,api.wmpvp.com
