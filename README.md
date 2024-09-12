@@ -55,4 +55,4 @@ Clash for Windows 已于 2023.11.2 (UTC+8) 删库，将不再积极支持`parser
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=lwd-temp/anti-ip-attribution&type=Date)](https://star-history.com/#lwd-temp/anti-ip-attribution&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=SunsetMkt/anti-ip-attribution&type=Date)](https://star-history.com/#SunsetMkt/anti-ip-attribution&Date)

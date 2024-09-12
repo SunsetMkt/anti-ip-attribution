@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # 针对部分网站显示IP归属地的分流规则
 # anti-ip-attribution parser-header.yaml
-# https://github.com/lwd-temp/anti-ip-attribution
+# https://github.com/SunsetMkt/anti-ip-attribution
 # 生成parser.yaml采用的基础模板，可以自定义。
 parsers: # array
   - url: https://example.com/profile.yaml # 修改为实际使用的URL

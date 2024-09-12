@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # 针对部分网站显示IP归属地的分流规则
 # anti-ip-attribution generate.py
-# https://github.com/lwd-temp/anti-ip-attribution
+# https://github.com/SunsetMkt/anti-ip-attribution
 # 从rules.yaml生成配置文件，由Actions调用。
 # 读取文件：
 # rules.yaml 配置文件
@@ -178,7 +178,7 @@ def generate_rule_provider(config):
         if rules[i].startswith('IP-CIDR') and 'no-resolve' not in rules[i]:
             rules[i] = rules[i] + ',no-resolve'
 
-    # https://github.com/lwd-temp/anti-ip-attribution/issues/23#issuecomment-1223931835
+    # https://github.com/SunsetMkt/anti-ip-attribution/issues/23#issuecomment-1223931835
     direct = []
     proxy = []
     reject = []
