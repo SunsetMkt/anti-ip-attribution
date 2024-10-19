@@ -5,8 +5,4 @@
 Co-authored-by: Sunset <26019675+SunsetMkt@users.noreply.github.com>
 ```
 
-若无法确定用户名前数字，直接使用用户名似乎在某些情况下也可行：
-
-```
-Co-authored-by: Sunset <SunsetMkt@users.noreply.github.com>
-```
+用户ID可使用API获取：https://api.github.com/users/SunsetMkt
