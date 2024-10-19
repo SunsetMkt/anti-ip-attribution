@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 8d0c520857f095a3b451c71f8c326b50299e6022
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 221b8c6ffc6efb9a9d59b8d04f075a87031a41a2
 # https://github.com/SunsetMkt/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -192,6 +192,11 @@ IP-CIDR,45.254.48.1/32,DomesticSocial
 IP-CIDR,59.111.160.195/32,DomesticSocial
 IP-CIDR,59.111.19.33/32,DomesticSocial
 IP-CIDR,59.111.19.53/32,DomesticSocial
+DOMAIN-SUFFIX,music.163.com.163jiasu.com,DomesticSocial
+IP-CIDR,119.36.90.80/32,DomesticSocial
+IP-CIDR,111.48.137.146/32,DomesticSocial
+IP-CIDR,1.95.21.35/32,DomesticSocial
+IP-CIDR,47.100.127.239/32,DomesticSocial
 DOMAIN-SUFFIX,lofter.com,DomesticSocial
 DOMAIN,yaolu.yuedu.163.com,DomesticSocial
 DOMAIN-SUFFIX,lf127.net,DIRECT
