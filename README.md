@@ -56,3 +56,7 @@ Clash for Windows 已于 2023.11.2 (UTC+8) 删库，将不再积极支持`parser
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=SunsetMkt/anti-ip-attribution&type=Date)](https://star-history.com/#SunsetMkt/anti-ip-attribution&Date)
+
+## Thanks to
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
