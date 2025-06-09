@@ -9,21 +9,21 @@
 # DOMAIN-SUFFIX,example.com,REJECT
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
-  name: "anti-ip-attribution" # 项目名
-  version: "v0.3.1" # 版本号
-  url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
-  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
-  rules: # 规则列表
-    
+    name: "anti-ip-attribution" # 项目名
+    version: "v0.3.1" # 版本号
+    url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
+    description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+    rules: # 规则列表
+        
 # ======= 微信 ======= #
 
-    # 微信通用
-    - DOMAIN,szshort.weixin.qq.com # 用途未知
-    - DOMAIN,szextshort.weixin.qq.com
-    - DOMAIN,szminorshort.weixin.qq.com
-    # 微信公众号评论
-    - DOMAIN,mp.weixin.qq.com # 微信公众号，不存在单独的API域名
-    # 微信视频号评论
-    # - DOMAIN,szshort.weixin.qq.com # 疑似微信视频号，用途未知
-    # 无法确定准确的请求方式，建议全局代理
-    
+        # 微信通用
+        - DOMAIN,szshort.weixin.qq.com # 用途未知
+        - DOMAIN,szextshort.weixin.qq.com
+        - DOMAIN,szminorshort.weixin.qq.com
+        # 微信公众号评论
+        - DOMAIN,mp.weixin.qq.com # 微信公众号，不存在单独的API域名
+        # 微信视频号评论
+        # - DOMAIN,szshort.weixin.qq.com # 疑似微信视频号，用途未知
+        # 无法确定准确的请求方式，建议全局代理
+        

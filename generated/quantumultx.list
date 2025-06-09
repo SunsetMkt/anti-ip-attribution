@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.1 c017544341cf49eb7ea0391d1d4a76c43b6a9c8f
+# anti-ip-attribution quantumultx.list v0.3.1 02fb4202d7d0cd9a67941d12ae7eedeaeb4d4bbf
 # https://github.com/SunsetMkt/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT

@@ -9,17 +9,17 @@
 # DOMAIN-SUFFIX,example.com,REJECT
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
-  name: "anti-ip-attribution" # 项目名
-  version: "v0.3.1" # 版本号
-  url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
-  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
-  rules: # 规则列表
-    
+    name: "anti-ip-attribution" # 项目名
+    version: "v0.3.1" # 版本号
+    url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
+    description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+    rules: # 规则列表
+        
 # ======= 起点App ======= #
 
-    # issues#62
-    # 章评书评区IP（大部分业务都塞在这个域名下，api book search login一大堆）
-    - DOMAIN,druidv6.if.qidian.com
-    # 疑似个人主页IP（非实时变化，看到有个login建议加上）
-    - DOMAIN,ptlogin6.qidian.com
-    
+        # issues#62
+        # 章评书评区IP（大部分业务都塞在这个域名下，api book search login一大堆）
+        - DOMAIN,druidv6.if.qidian.com
+        # 疑似个人主页IP（非实时变化，看到有个login建议加上）
+        - DOMAIN,ptlogin6.qidian.com
+        

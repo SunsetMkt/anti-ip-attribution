@@ -9,25 +9,25 @@
 # DOMAIN-SUFFIX,example.com,REJECT
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
-  name: "anti-ip-attribution" # 项目名
-  version: "v0.3.1" # 版本号
-  url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
-  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
-  rules: # 规则列表
-    
+    name: "anti-ip-attribution" # 项目名
+    version: "v0.3.1" # 版本号
+    url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
+    description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+    rules: # 规则列表
+        
 # ======= MIUI ======= #
 
-    # 应用包管理组件API
-    # - DOMAIN,api.installer.xiaomi.com,REJECT
-    # miui-tracking
-    # - DOMAIN,tracking.miui.com,REJECT
-    # - DOMAIN,tracking.intl.miui.com,REJECT
-    # - DOMAIN,tracking.rus.miui.com,REJECT
-    # - DOMAIN,tracking.india.miui.com,REJECT
-    # 病毒扫描
-    # - DOMAIN-SUFFIX,sec.miui.com,REJECT
-    # - DOMAIN-SUFFIX,sec.intl.miui.com,REJECT
-    # - DOMAIN,api.sec.miui.com,REJECT
-    # - DOMAIN,staging.sec.miui.com,REJECT
-    # - DOMAIN,a0.app.xiaomi.com,REJECT
-    
+        # 应用包管理组件API
+        # - DOMAIN,api.installer.xiaomi.com,REJECT
+        # miui-tracking
+        # - DOMAIN,tracking.miui.com,REJECT
+        # - DOMAIN,tracking.intl.miui.com,REJECT
+        # - DOMAIN,tracking.rus.miui.com,REJECT
+        # - DOMAIN,tracking.india.miui.com,REJECT
+        # 病毒扫描
+        # - DOMAIN-SUFFIX,sec.miui.com,REJECT
+        # - DOMAIN-SUFFIX,sec.intl.miui.com,REJECT
+        # - DOMAIN,api.sec.miui.com,REJECT
+        # - DOMAIN,staging.sec.miui.com,REJECT
+        # - DOMAIN,a0.app.xiaomi.com,REJECT
+        

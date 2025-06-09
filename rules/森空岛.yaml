@@ -15,9 +15,7 @@ config:
     description: "针对部分网站显示IP归属地的分流规则" # 项目描述
     rules: # 规则列表
         
-# ======= QQ音乐 ======= #
+# ======= 森空岛 ======= #
 
-        # 测试
-        - DOMAIN,y.qq.com,DIRECT # 图片资源，直连
-        - DOMAIN-SUFFIX,y.qq.com # u*.y.qq.com
+        - DOMAIN,zonai.skland.com
         

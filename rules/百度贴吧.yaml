@@ -9,29 +9,29 @@
 # DOMAIN-SUFFIX,example.com,REJECT
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
-  name: "anti-ip-attribution" # 项目名
-  version: "v0.3.1" # 版本号
-  url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
-  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
-  rules: # 规则列表
-    
+    name: "anti-ip-attribution" # 项目名
+    version: "v0.3.1" # 版本号
+    url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
+    description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+    rules: # 规则列表
+        
 # ======= 百度贴吧 ======= #
 
-    # 百度贴吧
-    - DOMAIN,tieba.baidu.com # 百度贴吧域名，不存在单独的API域名
-    - DOMAIN,tbmsg.baidu.com # 贴吧私信域名？
-    - DOMAIN,tb5.bdstatic.com # 贴吧不确定用途
-    - DOMAIN,fclog.baidu.com # 百度日志？
-    - DOMAIN,gsp0.baidu.com # 百度追踪？
-    - DOMAIN,hm.baidu.com # 百度统计
-    - DOMAIN,www.baidu.com # 网友提供贴吧IP定位接口
-    # Update #32
-    - DOMAIN,tiebac.baidu.com # 贴吧App API域名
-    # - DOMAIN-KEYWORD,tieba # 极端方案，可能会代理图片CDN
-    # issue#35#issuecomment-1438885974
-    - IP-CIDR,180.76.76.0/24 # Public DNS
-    - DOMAIN,httpsdns.baidu.com
-    - DOMAIN,c.tieba.baidu.com
-    - DOMAIN,httpdns.baidu.com
-    - DOMAIN,httpdns.baidubce.com
-    
+        # 百度贴吧
+        - DOMAIN,tieba.baidu.com # 百度贴吧域名，不存在单独的API域名
+        - DOMAIN,tbmsg.baidu.com # 贴吧私信域名？
+        - DOMAIN,tb5.bdstatic.com # 贴吧不确定用途
+        - DOMAIN,fclog.baidu.com # 百度日志？
+        - DOMAIN,gsp0.baidu.com # 百度追踪？
+        - DOMAIN,hm.baidu.com # 百度统计
+        - DOMAIN,www.baidu.com # 网友提供贴吧IP定位接口
+        # Update #32
+        - DOMAIN,tiebac.baidu.com # 贴吧App API域名
+        # - DOMAIN-KEYWORD,tieba # 极端方案，可能会代理图片CDN
+        # issue#35#issuecomment-1438885974
+        - IP-CIDR,180.76.76.0/24 # Public DNS
+        - DOMAIN,httpsdns.baidu.com
+        - DOMAIN,c.tieba.baidu.com
+        - DOMAIN,httpdns.baidu.com
+        - DOMAIN,httpdns.baidubce.com
+        

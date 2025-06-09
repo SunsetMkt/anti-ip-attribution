@@ -9,19 +9,19 @@
 # DOMAIN-SUFFIX,example.com,REJECT
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
-  name: "anti-ip-attribution" # 项目名
-  version: "v0.3.1" # 版本号
-  url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
-  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
-  rules: # 规则列表
-    
+    name: "anti-ip-attribution" # 项目名
+    version: "v0.3.1" # 版本号
+    url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
+    description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+    rules: # 规则列表
+        
 # ======= 豆瓣 ======= #
 
-    # issue#37
-    # IOS APP实测有效，其余设备不保证，doubanio.com的域名是加载图片的，实测直连不影响地区
-    - DOMAIN-SUFFIX,douban.com
-    - IP-CIDR,49.233.242.15/32
-    - IP-CIDR,81.70.124.99/32
-    - IP-CIDR,81.70.125.19/32
-    - IP-CIDR,140.143.177.206/32
-    
+        # issue#37
+        # IOS APP实测有效，其余设备不保证，doubanio.com的域名是加载图片的，实测直连不影响地区
+        - DOMAIN-SUFFIX,douban.com
+        - IP-CIDR,49.233.242.15/32
+        - IP-CIDR,81.70.124.99/32
+        - IP-CIDR,81.70.125.19/32
+        - IP-CIDR,140.143.177.206/32
+        

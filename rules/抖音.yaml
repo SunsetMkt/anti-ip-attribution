@@ -9,59 +9,59 @@
 # DOMAIN-SUFFIX,example.com,REJECT
 # 注意"DOMAIN"大写，不用"HOST"，除"REJECT"外不要添加规则。
 config:
-  name: "anti-ip-attribution" # 项目名
-  version: "v0.3.1" # 版本号
-  url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
-  description: "针对部分网站显示IP归属地的分流规则" # 项目描述
-  rules: # 规则列表
-    
+    name: "anti-ip-attribution" # 项目名
+    version: "v0.3.1" # 版本号
+    url: "https://github.com/SunsetMkt/anti-ip-attribution" # 项目地址
+    description: "针对部分网站显示IP归属地的分流规则" # 项目描述
+    rules: # 规则列表
+        
 # ======= 抖音 ======= #
 
-    # 抖音
-    # 请求域名过多，建议全局代理
-    # 网友提供抖音IP定位接口
-    - DOMAIN-KEYWORD,core-c-lq
-    - DOMAIN-KEYWORD,core-lq
-    - DOMAIN-KEYWORD,normal-c-lq
-    - DOMAIN-KEYWORD,normal-lq
-    - DOMAIN-KEYWORD,search-quic-lq
-    - DOMAIN-KEYWORD,search-lq
-    # Update #32
-    # Append
-    # issue#33#issuecomment-1421094069
-    # - DOMAIN-KEYWORD,-normal-
-    - DOMAIN-SUFFIX,zijieapi.com,DIRECT
-    - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
-    - DOMAIN-KEYWORD,-normal-hl
-    - DOMAIN-KEYWORD,-normal-c-hl
-    - DOMAIN-KEYWORD,-core-c-hl
-    - DOMAIN-KEYWORD,-normal-lf
-    - DOMAIN-KEYWORD,-normal-c-lf
-    - DOMAIN-KEYWORD,-core-c-lf
-    # - DOMAIN-KEYWORD,-core-
-    # - DOMAIN-KEYWORD,-misc-
-    # - DOMAIN-KEYWORD,-search-
-    # - DOMAIN-KEYWORD,-aweme-
-    # - DOMAIN-KEYWORD,cdn-tos # CDN
-    # 一些确定的域名
-    # #33 针对 amemv.com 域名下的 -normal- 关键词代理就能实现IP归属地修改。如果对全局域名进行代理的话，请求的视频内容大部分来自海外cdn。
-    # - DOMAIN-SUFFIX,bytetos.com # CDN
-    # - DOMAIN-SUFFIX,amemv.com
-    # - DOMAIN-SUFFIX,zijieapi.com
-    # - DOMAIN-SUFFIX,awemeughun.com
-    # - DOMAIN-SUFFIX,ecombdapi.com
-    # - DOMAIN-SUFFIX,bytegecko.com
-    # - DOMAIN-SUFFIX,ttwebview.com
-    # - DOMAIN-SUFFIX,bytetcc.com
-    # - DOMAIN-SUFFIX,douyinvod.com # 视频CDN
-    # - DOMAIN-SUFFIX,bytednsdoc.com # 图片CDN
-    # - DOMAIN-SUFFIX,douyinpic.com # 图片CDN
-    # - DOMAIN-SUFFIX,byteimg.com # 图片CDN
-    # - DOMAIN-SUFFIX,bytegoofy.com # 图片CDN？
-    # - DOMAIN-SUFFIX,ibytedapm.com # CDN
-    # - DOMAIN-SUFFIX,yhgfb-cn-static.com # CDN
-    # P.S. 抖音适用于PC的Web版API非常明确
-    - DOMAIN,sso.douyin.com # 登录
-    - DOMAIN,www.douyin.com # Web版PC端
-    - DOMAIN-SUFFIX,snssdk.com # API域名
-    
+        # 抖音
+        # 请求域名过多，建议全局代理
+        # 网友提供抖音IP定位接口
+        - DOMAIN-KEYWORD,core-c-lq
+        - DOMAIN-KEYWORD,core-lq
+        - DOMAIN-KEYWORD,normal-c-lq
+        - DOMAIN-KEYWORD,normal-lq
+        - DOMAIN-KEYWORD,search-quic-lq
+        - DOMAIN-KEYWORD,search-lq
+        # Update #32
+        # Append
+        # issue#33#issuecomment-1421094069
+        # - DOMAIN-KEYWORD,-normal-
+        - DOMAIN-SUFFIX,zijieapi.com,DIRECT
+        - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+        - DOMAIN-KEYWORD,-normal-hl
+        - DOMAIN-KEYWORD,-normal-c-hl
+        - DOMAIN-KEYWORD,-core-c-hl
+        - DOMAIN-KEYWORD,-normal-lf
+        - DOMAIN-KEYWORD,-normal-c-lf
+        - DOMAIN-KEYWORD,-core-c-lf
+        # - DOMAIN-KEYWORD,-core-
+        # - DOMAIN-KEYWORD,-misc-
+        # - DOMAIN-KEYWORD,-search-
+        # - DOMAIN-KEYWORD,-aweme-
+        # - DOMAIN-KEYWORD,cdn-tos # CDN
+        # 一些确定的域名
+        # #33 针对 amemv.com 域名下的 -normal- 关键词代理就能实现IP归属地修改。如果对全局域名进行代理的话，请求的视频内容大部分来自海外cdn。
+        # - DOMAIN-SUFFIX,bytetos.com # CDN
+        # - DOMAIN-SUFFIX,amemv.com
+        # - DOMAIN-SUFFIX,zijieapi.com
+        # - DOMAIN-SUFFIX,awemeughun.com
+        # - DOMAIN-SUFFIX,ecombdapi.com
+        # - DOMAIN-SUFFIX,bytegecko.com
+        # - DOMAIN-SUFFIX,ttwebview.com
+        # - DOMAIN-SUFFIX,bytetcc.com
+        # - DOMAIN-SUFFIX,douyinvod.com # 视频CDN
+        # - DOMAIN-SUFFIX,bytednsdoc.com # 图片CDN
+        # - DOMAIN-SUFFIX,douyinpic.com # 图片CDN
+        # - DOMAIN-SUFFIX,byteimg.com # 图片CDN
+        # - DOMAIN-SUFFIX,bytegoofy.com # 图片CDN？
+        # - DOMAIN-SUFFIX,ibytedapm.com # CDN
+        # - DOMAIN-SUFFIX,yhgfb-cn-static.com # CDN
+        # P.S. 抖音适用于PC的Web版API非常明确
+        - DOMAIN,sso.douyin.com # 登录
+        - DOMAIN,www.douyin.com # Web版PC端
+        - DOMAIN-SUFFIX,snssdk.com # API域名
+        
