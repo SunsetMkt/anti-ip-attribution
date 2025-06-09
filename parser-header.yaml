@@ -1,15 +1,14 @@
-#! /usr/bin/env python3
 # 针对部分网站显示IP归属地的分流规则
 # anti-ip-attribution parser-header.yaml
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 生成parser.yaml采用的基础模板，可以自定义。
 parsers: # array
-  - url: https://example.com/profile.yaml # 修改为实际使用的URL
-    yaml:
-      prepend-proxy-groups: # 数组合并至原配置proxy-groups数组前
-        - name: "IP归属地"
-          type: select
-          proxies:
-            - 🔰 选择节点 # 修改为实际使用的节点选择proxy-groups
-            - DIRECT # 直连
-      prepend-rules: # 数组合并至原配置rules数组前
+    - url: https://example.com/profile.yaml # 修改为实际使用的URL
+      yaml:
+          prepend-proxy-groups: # 数组合并至原配置proxy-groups数组前
+              - name: "IP归属地"
+                type: select
+                proxies:
+                    - 🔰 选择节点 # 修改为实际使用的节点选择proxy-groups
+                    - DIRECT # 直连
+          prepend-rules: # 数组合并至原配置rules数组前
