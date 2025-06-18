@@ -427,3 +427,7 @@ config:
         # ======= 完美世界电竞App ======= #
         # issues#65
         - DOMAIN,api.wmpvp.com
+        # ======= 虎扑 ======= #
+        - DOMAIN,bbs.mobileapi.hupu.com
+        # ======= IT之家 ======= #
+        - DOMAIN,cmt.ithome.com
