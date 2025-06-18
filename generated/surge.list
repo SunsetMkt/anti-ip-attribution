@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.1 02fb4202d7d0cd9a67941d12ae7eedeaeb4d4bbf
+# anti-ip-attribution surge.list v0.3.1 d4a828fd5aa22dfc4368311ab0846d3349b8409d
 # https://github.com/SunsetMkt/anti-ip-attribution
 # Surge分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -232,3 +232,5 @@ DOMAIN-SUFFIX,soulapp.cn
 DOMAIN,druidv6.if.qidian.com
 DOMAIN,ptlogin6.qidian.com
 DOMAIN,api.wmpvp.com
+DOMAIN,bbs.mobileapi.hupu.com
+DOMAIN,cmt.ithome.com

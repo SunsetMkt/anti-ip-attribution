@@ -15,8 +15,6 @@ config:
     description: "针对部分网站显示IP归属地的分流规则" # 项目描述
     rules: # 规则列表
         
-# ======= 完美世界电竞App ======= #
+# ======= IT之家 ======= #
 
-        # issues#65
-        - DOMAIN,api.wmpvp.com
-        
+        - DOMAIN,cmt.ithome.com
