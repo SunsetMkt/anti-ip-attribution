@@ -12,16 +12,16 @@
 
 ## 自动生成的配置文件
 
-|                                     文件                                     |                                                              用途                                                               |
-| :--------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-|                   ~~[parser.yaml](generated/parser.yaml)~~                   |             ~~适用于 Clash for Windows 的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html~~             |
-|              [rule-provider.yaml](generated/rule-provider.yaml)              |            适用于 Clash 的 Rule Provider 功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider            |
-|       [rule-provider-direct.yaml](generated/rule-provider-direct.yaml)       |  仅包含 DIRECT 规则，适用于 Clash 的 Rule Provider 功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider  |
-|        [rule-provider-proxy.yaml](generated/rule-provider-proxy.yaml)        | 仅包含需要代理的规则，适用于 Clash 的 Rule Provider 功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider |
-|       [rule-provider-reject.yaml](generated/rule-provider-reject.yaml)       |  仅包含 REJECT 规则，适用于 Clash 的 Rule Provider 功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider  |
-|                      [surge.list](generated/surge.list)                      |                                                         Surge 分流规则                                                          |
-|                [quantumultx.list](generated/quantumultx.list)                |                                                      QuantumultX 分流规则                                                       |
-| [quantumultx-domesticsocial.list](generated/quantumultx-domesticsocial.list) |                                        QuantumultX 分流规则，策略组名称为 DomesticSocial                                        |
+|                                     文件                                     |                                                                              用途                                                                              |
+| :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                   ~~[parser.yaml](generated/parser.yaml)~~                   | ~~适用于 Clash for Windows 的配置文件预处理功能，详见[文档备份](https://web.archive.org/web/20231015024315/https://docs.cfw.lbyczf.com/contents/parser.html)~~ |
+|              [rule-provider.yaml](generated/rule-provider.yaml)              |                            适用于 Clash 的 Rule Provider 功能，详见[mihomo 文档](https://wiki.metacubex.one/config/rule-providers/)                            |
+|       [rule-provider-direct.yaml](generated/rule-provider-direct.yaml)       |                  仅包含 DIRECT 规则，适用于 Clash 的 Rule Provider 功能，详见[mihomo 文档](https://wiki.metacubex.one/config/rule-providers/)                  |
+|        [rule-provider-proxy.yaml](generated/rule-provider-proxy.yaml)        |                 仅包含需要代理的规则，适用于 Clash 的 Rule Provider 功能，详见[mihomo 文档](https://wiki.metacubex.one/config/rule-providers/)                 |
+|       [rule-provider-reject.yaml](generated/rule-provider-reject.yaml)       |                  仅包含 REJECT 规则，适用于 Clash 的 Rule Provider 功能，详见[mihomo 文档](https://wiki.metacubex.one/config/rule-providers/)                  |
+|                      [surge.list](generated/surge.list)                      |                                                                         Surge 分流规则                                                                         |
+|                [quantumultx.list](generated/quantumultx.list)                |                                                                      QuantumultX 分流规则                                                                      |
+| [quantumultx-domesticsocial.list](generated/quantumultx-domesticsocial.list) |                                                       QuantumultX 分流规则，策略组名称为 DomesticSocial                                                        |
 
 ## 关于 Clash for Windows
 
