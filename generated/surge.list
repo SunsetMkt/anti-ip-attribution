@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.1 d4a828fd5aa22dfc4368311ab0846d3349b8409d
+# anti-ip-attribution surge.list v0.3.1 b7a4ad6f37458b9db39ecf4e58973adea81b1f8e
 # https://github.com/SunsetMkt/anti-ip-attribution
 # Surge分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
