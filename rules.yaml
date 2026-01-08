@@ -362,6 +362,7 @@ config:
         - DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
         - DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
         - DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
+        - DOMAIN-SUFFIX,ws3.douyucdn.cn,DIRECT # #78
         #direct弹幕
         - DOMAIN-SUFFIX,wsproxy.douyu.com,DIRECT
         - DOMAIN-SUFFIX,danmuproxy.douyu.com,DIRECT
