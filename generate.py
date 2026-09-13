@@ -13,9 +13,14 @@
 # surge.list Surge分流规则
 # quantumultx.list QuantumultX分流规则
 # quantumultx-domesticsocial.list QuantumultX分流规则，策略组名称为DomesticSocial
+# sing-box/direct.srs sing-box/proxy.srs sing-box/reject.srs 适用于sing-box的Rule Set规则集
 import copy
+import json
 import os
+import shutil
+import subprocess
 import sys
+import tempfile
 
 import git
 import yaml
@@ -328,6 +333,91 @@ def generate_quantumultx(config):
     )
 
 
+def generate_singbox(config):
+    """生成sing-box规则集"""
+    has_singbox = shutil.which("sing-box") is not None
+    if not has_singbox:
+        print("未检测到 sing-box，跳过生成")
+        return
+
+    rules = copy.deepcopy(config["config"]["rules"])
+
+    direct = []
+    proxy = []
+    reject = []
+
+    for rule in rules:
+        rule = rule.strip()
+        if "REJECT" in rule:
+            reject.append(rule)
+        elif "DIRECT" in rule:
+            direct.append(rule)
+        else:
+            proxy.append(rule)
+
+    def to_singbox_ruleset(rule_list):
+        domains = []
+        domain_suffixes = []
+        domain_keywords = []
+        ip_cidrs = []
+
+        for r in rule_list:
+            parts = [p.strip() for p in r.split(",")]
+            method = parts[0]
+            val = parts[1]
+
+            if method == "DOMAIN":
+                domains.append(val)
+            elif method == "DOMAIN-SUFFIX":
+                domain_suffixes.append(val)
+            elif method == "DOMAIN-KEYWORD":
+                domain_keywords.append(val)
+            elif method in ("IP-CIDR", "IP-CIDR6"):
+                ip_cidrs.append(val)
+
+        rule_obj = {}
+        if domains:
+            rule_obj["domain"] = sorted(list(set(domains)))
+        if domain_suffixes:
+            rule_obj["domain_suffix"] = sorted(list(set(domain_suffixes)))
+        if domain_keywords:
+            rule_obj["domain_keyword"] = sorted(list(set(domain_keywords)))
+        if ip_cidrs:
+            rule_obj["ip_cidr"] = sorted(list(set(ip_cidrs)))
+
+        return {
+            "version": 1,
+            "rules": [rule_obj] if rule_obj else [],
+        }
+
+    output_dir = os.path.join("generated", "sing-box")
+    os.makedirs(output_dir, exist_ok=True)
+
+    targets = [
+        ("direct.srs", direct),
+        ("proxy.srs", proxy),
+        ("reject.srs", reject),
+    ]
+
+    for filename, rlist in targets:
+        print(f"生成{filename}")
+        srs_path = os.path.join(output_dir, filename)
+        rule_data = to_singbox_ruleset(rlist)
+
+        with tempfile.NamedTemporaryFile("w", suffix=".json", encoding="utf-8", delete=False) as tmp:
+            tmp_json_path = tmp.name
+            json.dump(rule_data, tmp, ensure_ascii=False)
+
+        try:
+            cmd = ["sing-box", "rule-set", "compile", tmp_json_path, "-o", srs_path]
+            res = subprocess.run(cmd, capture_output=True, text=True)
+            if res.returncode != 0:
+                print(f"生成{filename}失败: {res.stderr}")
+        finally:
+            if os.path.exists(tmp_json_path):
+                os.remove(tmp_json_path)
+
+
 if __name__ == "__main__":
     config = read_yaml("rules.yaml")
     print(get_head_comment(config, "generate.py", "配置文件生成脚本"))
@@ -351,6 +441,9 @@ if __name__ == "__main__":
         print("=====================")
         print("生成quantumultx.list...")
         generate_quantumultx(config)
+        print("=====================")
+        print("生成sing-box规则集...")
+        generate_singbox(config)
         print("=====================")
         print("生成配置文件完成！")
     else:

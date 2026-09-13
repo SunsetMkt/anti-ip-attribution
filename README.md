@@ -22,6 +22,9 @@
 |                      [surge.list](generated/surge.list)                      |                                                                         Surge 分流规则                                                                         |
 |                [quantumultx.list](generated/quantumultx.list)                |                                                                      QuantumultX 分流规则                                                                      |
 | [quantumultx-domesticsocial.list](generated/quantumultx-domesticsocial.list) |                                                       QuantumultX 分流规则，策略组名称为 DomesticSocial                                                        |
+|         [sing-box/direct.srs](generated/sing-box/direct.srs)         |                                         适用于 sing-box 的 DIRECT 规则集（二进制，详见[官方文档](https://sing-box.sagernet.org/configuration/rule-set/)）                                         |
+|          [sing-box/proxy.srs](generated/sing-box/proxy.srs)          |                                          适用于 sing-box 的 PROXY 规则集（二进制，详见[官方文档](https://sing-box.sagernet.org/configuration/rule-set/)）                                         |
+|         [sing-box/reject.srs](generated/sing-box/reject.srs)         |                                         适用于 sing-box 的 REJECT 规则集（二进制，详见[官方文档](https://sing-box.sagernet.org/configuration/rule-set/)）                                         |
 
 ## 关于 Clash for Windows
 
