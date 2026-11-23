@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 365da625b008ed49d6cbf6bfb5fe66e69fbdceff
+# anti-ip-attribution parser.yaml v0.3.1 458c1a12bba52a28272d8b0598d62b036db04db9
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -85,6 +85,11 @@ parsers:
     - "DOMAIN-SUFFIX,toutiaoapi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,gifshow.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,ksapisrv.com,IP\u5F52\u5C5E\u5730"
+    - DOMAIN,dotsocr.xiaohongshu.com,DIRECT
+    - DOMAIN-SUFFIX,rednotecdn.com,DIRECT
+    - "DOMAIN-SUFFIX,rednote.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,rednote,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,rnote.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,xiaohongshu.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,xiaohongshu,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,114.55.236.88/32,IP\u5F52\u5C5E\u5730"

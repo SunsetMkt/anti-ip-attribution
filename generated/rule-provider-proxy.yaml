@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 365da625b008ed49d6cbf6bfb5fe66e69fbdceff
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 458c1a12bba52a28272d8b0598d62b036db04db9
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -51,6 +51,9 @@ payload:
 - DOMAIN-SUFFIX,toutiaoapi.com
 - DOMAIN-SUFFIX,gifshow.com
 - DOMAIN-SUFFIX,ksapisrv.com
+- DOMAIN-SUFFIX,rednote.com
+- DOMAIN-KEYWORD,rednote
+- DOMAIN-SUFFIX,rnote.com
 - DOMAIN-SUFFIX,xiaohongshu.com
 - DOMAIN-KEYWORD,xiaohongshu
 - IP-CIDR,114.55.236.88/32,no-resolve
