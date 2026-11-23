@@ -173,6 +173,19 @@ config:
         - DOMAIN-SUFFIX,gifshow.com
         - DOMAIN-SUFFIX,ksapisrv.com
         # ======= 小红书 ======= #
+        # dots.ocr 为独立的 OCR 演示服务，按需求直连；需置于小红书域名规则之前
+        - DOMAIN,dotsocr.xiaohongshu.com,DIRECT
+        # 实测观察到对国际站 CDN 的连接；公开资料显示该 CDN 包含前端、图片及视频资源
+        # 本次测试处于深圳 APEC 特殊时期，网络环境可能影响结果，不代表日常网络情况
+        # 国际站 CDN 在中国可能无法正常直连，尚未验证日常网络下的直连可用性，请根据实际情况调整策略
+        # 使用拆分规则集时，需确保 DIRECT 规则优先于代理规则，才能使此例外生效
+        - DOMAIN-SUFFIX,rednotecdn.com,DIRECT
+        # RedNote 国际站：登录及浏览时观察到网页、API、签名和创作者相关域名的连接
+        - DOMAIN-SUFFIX,rednote.com
+        - DOMAIN-KEYWORD,rednote
+        # 网页端观察到 t2.rnote.com、apm-fe.rnote.com 的请求，移动端观察到 edith.rnote.com 的连接
+        # edith.rnote.com 解析到共享 CDN IP，地址可能变化且可能影响其他服务，暂不添加 IP 规则
+        - DOMAIN-SUFFIX,rnote.com
         # issue#4 提供
         - DOMAIN-SUFFIX,xiaohongshu.com
         - DOMAIN-KEYWORD,xiaohongshu
